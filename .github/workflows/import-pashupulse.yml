@@ -18,29 +18,32 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          lfs: true
 
-      - name: Download source repository
+      - name: Clone source repository with LFS
         run: |
-          curl -L https://github.com/Rishavutkarsh/PashuPulse/archive/refs/heads/main.zip -o /tmp/pashupulse-main.zip
-          unzip -q /tmp/pashupulse-main.zip -d /tmp/pashupulse-src
+          git lfs install
+          git clone --depth 1 https://github.com/Rishavutkarsh/PashuPulse.git /tmp/pashupulse-src
+          cd /tmp/pashupulse-src
+          git lfs pull
 
       - name: Replace repository contents
         run: |
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          rsync -a /tmp/pashupulse-src/PashuPulse-main/ ./
+          rsync -a --exclude .git /tmp/pashupulse-src/ ./
           rm -f .github/workflows/import-pashupulse.yml
 
       - name: Commit imported code
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config lfs.allowincompletepush true
           git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Import PashuPulse codebase"
+            git lfs push origin main --all
             git push origin main
           fi
 
-# Triggered once by Codex to import the source repository with LFS pointers.
+# Triggered once by Codex to import the source repository with Git LFS objects.
