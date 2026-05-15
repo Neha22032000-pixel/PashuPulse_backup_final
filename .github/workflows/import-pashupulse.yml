@@ -34,6 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config lfs.allowincompletepush true
           git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -42,4 +43,4 @@ jobs:
             git push origin main
           fi
 
-# Triggered once by Codex to import the source repository.
+# Triggered once by Codex to import the source repository with LFS pointers.
