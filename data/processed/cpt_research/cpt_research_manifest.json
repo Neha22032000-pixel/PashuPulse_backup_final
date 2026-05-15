@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "cpt_corpus_audit_report.json": "5104c6b3c9ef5aa94ff66a747bd6af79cdfb918ccc6b5ca5cb71f3621e69c0d4",
+    "cpt_experiment_matrix.json": "fb010bc336a3955e63247b1f14fa1a0644cb6fd2f2b24702f8d59a63b29abdad",
+    "cpt_question_bank_seed.jsonl": "0e9b3c3a66edd8c1ccf96b5e02ad1c04b50f5e0165ff30f1b96956a8cfc10c61",
+    "cpt_research_decision_template.json": "3e5de456ca8280c86f036315ee7dcee8ab8760d702b027e4414ac830afc0e935",
+    "cpt_split_manifest.json": "8f895f724aaa73e747a393087a57f4fb3817a47039d443fe90d94ee4608c91a1"
+  },
+  "created_date": "2026-05-15",
+  "notes": [
+    "Research-only artifacts; no CPT/DAPT run is approved.",
+    "Question bank is eval-only and must not enter training corpora."
+  ],
+  "question_count": 45,
+  "research_version": "cpt-dapt-research-v1",
+  "sft_allowed": false,
+  "status": "CPT_DAPT_RESEARCH_ARTIFACTS_READY",
+  "training_allowed": false
+}

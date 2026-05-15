@@ -1,0 +1,214 @@
+{
+  "errors": [],
+  "warnings": [],
+  "top_prompts": [
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda clean water and trough cleaning hai.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is clean water and trough cleaning.",
+      1
+    ],
+    [
+      "{animal} ka shed/chara barsaat mein safe kaise manage karu? mudda clean water and trough cleaning hai.",
+      1
+    ],
+    [
+      "{animal} langda raha hai par kaam zaroori hai, aaj rest dena chahiye kya? mudda summer water breaks hai.",
+      1
+    ],
+    [
+      "the yoke area is rubbed on my {animal}. should work stop for now? the concern is summer water breaks.",
+      1
+    ],
+    [
+      "{animal} ke hoof/shoulder mein dard lag raha hai, painkiller dekar kaam karu kya? mudda summer water breaks hai.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor.",
+      1
+    ],
+    [
+      "{animal} ka shed/chara barsaat mein safe kaise manage karu? mudda dry shed floor hai.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda monsoon ventilation hai.",
+      1
+    ]
+  ],
+  "top_first_safe_steps": [
+    [
+      "First, keep trough water clean and shaded.",
+      1
+    ],
+    [
+      "Make the routine practical: clean water, dry floor, airflow, safe fodder, and rest around clean water and trough cleaning.",
+      1
+    ],
+    [
+      "For clean water and trough cleaning, write down time, feed, water, dung, milk, breathing, and standing changes for later trained help.",
+      1
+    ],
+    [
+      "First, offer water breaks and shade during hot work.",
+      1
+    ],
+    [
+      "Make the routine practical: clean water, dry floor, airflow, safe fodder, and rest around summer water breaks.",
+      1
+    ],
+    [
+      "For summer water breaks, write down time, feed, water, dung, milk, breathing, and standing changes for later trained help.",
+      1
+    ],
+    [
+      "First, remove wet bedding and improve drainage.",
+      1
+    ],
+    [
+      "Make the routine practical: clean water, dry floor, airflow, safe fodder, and rest around dry shed floor.",
+      1
+    ],
+    [
+      "For dry shed floor, write down time, feed, water, dung, milk, breathing, and standing changes for later trained help.",
+      1
+    ],
+    [
+      "First, keep airflow without chilling young calves.",
+      1
+    ]
+  ],
+  "top_first_checks": [
+    [
+      "Check whether clean water and trough cleaning is already causing appetite, dung, or standing changes, and note whether the animal is standing and breathing normally.",
+      1
+    ],
+    [
+      "For clean water and trough cleaning, ask who else in the herd is affected and whether feed, work, milking, or weather changed recently.",
+      1
+    ],
+    [
+      "For clean water and trough cleaning, ask when it started, what the farmer already tried, and whether trained help is reachable later.",
+      1
+    ],
+    [
+      "Check whether summer water breaks is already causing appetite, dung, or standing changes, and note whether the animal is standing and breathing normally.",
+      1
+    ],
+    [
+      "For summer water breaks, ask who else in the herd is affected and whether feed, work, milking, or weather changed recently.",
+      1
+    ],
+    [
+      "For summer water breaks, ask when it started, what the farmer already tried, and whether trained help is reachable later.",
+      1
+    ],
+    [
+      "Check whether dry shed floor is already causing appetite, dung, or standing changes, and note whether the animal is standing and breathing normally.",
+      1
+    ],
+    [
+      "For dry shed floor, ask who else in the herd is affected and whether feed, work, milking, or weather changed recently.",
+      1
+    ],
+    [
+      "For dry shed floor, ask when it started, what the farmer already tried, and whether trained help is reachable later.",
+      1
+    ],
+    [
+      "Check whether monsoon ventilation is already causing appetite, dung, or standing changes, and note whether the animal is standing and breathing normally.",
+      1
+    ]
+  ],
+  "top_red_flags": [
+    [
+      "For clean water and trough cleaning, escalate if you see not drinking, collapse, breathing trouble, or many animals sick.",
+      1
+    ],
+    [
+      "For clean water and trough cleaning, escalate if you see collapse, severe weakness, breathing trouble, or many animals affected.",
+      1
+    ],
+    [
+      "For clean water and trough cleaning, escalate if you see worsening signs, blood, deep wound, abnormal milk, or unsafe movement/sale pressure.",
+      1
+    ],
+    [
+      "For summer water breaks, escalate if you see not drinking, collapse, breathing trouble, or many animals sick.",
+      1
+    ],
+    [
+      "For summer water breaks, escalate if you see collapse, severe weakness, breathing trouble, or many animals affected.",
+      1
+    ],
+    [
+      "For summer water breaks, escalate if you see worsening signs, blood, deep wound, abnormal milk, or unsafe movement/sale pressure.",
+      1
+    ],
+    [
+      "For dry shed floor, escalate if you see not drinking, collapse, breathing trouble, or many animals sick.",
+      1
+    ],
+    [
+      "For dry shed floor, escalate if you see collapse, severe weakness, breathing trouble, or many animals affected.",
+      1
+    ],
+    [
+      "For dry shed floor, escalate if you see worsening signs, blood, deep wound, abnormal milk, or unsafe movement/sale pressure.",
+      1
+    ],
+    [
+      "For monsoon ventilation, escalate if you see not drinking, collapse, breathing trouble, or many animals sick.",
+      1
+    ]
+  ],
+  "top_must_not_say": [
+    [
+      "For clean water and trough cleaning, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For summer water breaks, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For dry shed floor, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For monsoon ventilation, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For dry fodder storage, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For gradual feed change, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For mineral and salt awareness without dosing, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For calf clean bedding, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For calf suckling observation, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ],
+    [
+      "For ox rest after work, do not say to give medicine, injection, or dose for routine care.",
+      3
+    ]
+  ]
+}

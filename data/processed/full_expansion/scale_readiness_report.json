@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "warnings": [],
+  "row_counts": {
+    "sft_train": 1050,
+    "sft_dev": 225,
+    "final_eval": 225
+  },
+  "expected_row_counts": {
+    "sft_train": 1050,
+    "sft_dev": 225,
+    "final_eval": 225
+  },
+  "scale_ready": false,
+  "reason": "1.5K expansion candidate is review-ready only; SFT export requires a new approval bundle."
+}

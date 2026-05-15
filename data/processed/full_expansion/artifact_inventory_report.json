@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "warnings": [],
+  "stale_exports": [],
+  "row_counts": {
+    "sft_train": 1050,
+    "sft_dev": 225,
+    "final_eval": 225
+  }
+}

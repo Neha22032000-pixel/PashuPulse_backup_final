@@ -1,0 +1,174 @@
+{
+  "coverage": {
+    "accepted_source_count": 60,
+    "chunk_count": 3799,
+    "clean_tokens": 2543181,
+    "country_counts": {
+      "India": 26,
+      "International": 21,
+      "United States": 13
+    },
+    "coverage_goal": "coverage-first offline library; token count is secondary",
+    "language_counts": {
+      "en": 54,
+      "hi": 6
+    },
+    "max_source_family_token_share": 0.5251,
+    "missing_species": [],
+    "missing_topics": [],
+    "species_counts": {
+      "buffalo": 40,
+      "calf": 23,
+      "cow": 53,
+      "ox/bullock": 4
+    },
+    "tier_counts": {
+      "academic_extension": 3,
+      "international_extension": 13,
+      "international_standard": 2,
+      "official_extension_india": 21,
+      "official_india": 2,
+      "reputable_veterinary_reference": 6,
+      "university_extension": 13
+    },
+    "topic_counts": {
+      "FMD-like signs": 3,
+      "animal health": 8,
+      "bites": 2,
+      "bloat": 5,
+      "breeding": 1,
+      "brucellosis": 1,
+      "buffalo": 3,
+      "calf care": 5,
+      "dairy husbandry": 1,
+      "diarrhea": 3,
+      "disease control": 1,
+      "escalation": 1,
+      "extension": 2,
+      "farm operations": 6,
+      "feeding": 21,
+      "health": 1,
+      "heat/cold stress": 12,
+      "housing": 5,
+      "hygiene": 1,
+      "mastitis": 2,
+      "milk hygiene": 9,
+      "milk production": 1,
+      "movement control": 1,
+      "nutrition": 5,
+      "parasites": 3,
+      "poisoning/spoiled feed": 1,
+      "pregnancy/calving": 5,
+      "reproduction": 2,
+      "shed hygiene": 4,
+      "smallholder": 1,
+      "water": 7,
+      "welfare": 8,
+      "working ox care": 3,
+      "wounds": 3
+    },
+    "total_source_count": 74,
+    "valid": true
+  },
+  "created_date": "2026-05-15",
+  "duplicate_chunk_count": 133,
+  "imbalance_flags": [
+    {
+      "flag": "dominant_source_family",
+      "severity": "review_required",
+      "threshold": 0.5,
+      "value": 0.5252
+    }
+  ],
+  "largest_source_token_counts": {
+    "fao_dairy_disease": 5466,
+    "fao_dairy_feeding": 9099,
+    "fao_dairy_reproduction": 5338,
+    "fao_good_dairy_practice_pdf": 24948,
+    "fao_smallholder_dairying": 1219646,
+    "msd_mastitis": 8515,
+    "nddb_good_dairy_husbandry": 1465050,
+    "penn_state_dairy": 3578,
+    "wisc_heat_facilities": 3883,
+    "woah_dairy_welfare_2014": 18174
+  },
+  "required_species_present": {
+    "buffalo": true,
+    "calf": true,
+    "cow": true,
+    "ox/bullock": true
+  },
+  "required_topics_present": {
+    "FMD-like signs": true,
+    "bites": true,
+    "bloat": true,
+    "calf care": true,
+    "diarrhea": true,
+    "feeding": true,
+    "heat/cold stress": true,
+    "milk hygiene": true,
+    "parasites": true,
+    "poisoning/spoiled feed": true,
+    "pregnancy/calving": true,
+    "shed hygiene": true,
+    "water": true,
+    "working ox care": true,
+    "wounds": true
+  },
+  "research_version": "cpt-dapt-research-v1",
+  "source_family_token_counts": {
+    "animal_welfare": 2475,
+    "cgiar_climate": 398,
+    "dahd": 2627,
+    "fao": 1272896,
+    "icar_buffalo": 789,
+    "icar_extension": 592,
+    "msd": 17018,
+    "nddb": 1483094,
+    "penn_state": 3578,
+    "umn": 3957,
+    "wisc": 17420,
+    "woah_dairy": 18174,
+    "woah_terrestrial": 588
+  },
+  "source_library": {
+    "accepted_source_count": 60,
+    "artifact_hashes": {
+      "accepted_cpt_sources.jsonl": "2e58d83462a21cd121d825e68c1269b32b523f658b0fbc3544c0e4768f51b361",
+      "accepted_stripped_cpt_sources.jsonl": "1942250467de9ab20aa37bd21f9c32de7a516fdef633402626897108c0eaab9e",
+      "cpt_clean_chunks.jsonl": "4346bb25dd76d61973f704ad20b4b8a99b87f587eddbbe445bdf2f8d4f11b822",
+      "manifests/source_download_manifest.jsonl": "b4e61e6fa102650c6c61c8283443dd7f817679ef2c421b86a8299b7e20037b53",
+      "manifests/source_extraction_manifest.jsonl": "23857910ec43cbe534d22eebab480ef1c7a34facce48885184266f02ff7c2dff",
+      "manifests/source_quality_manifest.jsonl": "39f1c163bd4a5cecb90a438723acbffe6ffcc3701bfea946df2950167b31f82b",
+      "quarantined_cpt_sources.jsonl": "23166655742bf7705358604b2ad7a78d72579589f11b57b873ae2960fd339393",
+      "rejected_cpt_sources.jsonl": "7423f06c64da7a7316e12ca0a7bbf75a90433666edd70e44b67e215745dcd435",
+      "reports/source_coverage_report.json": "60c632b76bbc64383b3f1d2ec191e8fd73d200ed26fade4d3382a0a2195176fc",
+      "reports/source_safety_filter_report.json": "6650c293f68dc04a815cdde0df31725db7fc90ec9fbcd13f101137c36457c4cb"
+    },
+    "chunk_count": 3799,
+    "clean_tokens": 2543181,
+    "library_version": "offline-library-v1",
+    "source_count": 74
+  },
+  "split_counts": {
+    "dev": {
+      "chunks": 1971,
+      "sources": 9,
+      "tokens": 1475171
+    },
+    "test": {
+      "chunks": 45,
+      "sources": 9,
+      "tokens": 29559
+    },
+    "train": {
+      "chunks": 1783,
+      "sources": 42,
+      "tokens": 1318876
+    }
+  },
+  "warnings": [
+    "Held-out loss is an adaptation signal, not proof of usable livestock knowledge.",
+    "Question probes must remain eval-only and must not enter CPT/SFT data."
+  ]
+}

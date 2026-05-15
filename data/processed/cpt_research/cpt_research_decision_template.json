@@ -1,0 +1,30 @@
+{
+  "allowed_decisions": [
+    "continue_to_cpt_pilot_design",
+    "improve_corpus_first",
+    "prefer_retrieval_first",
+    "stop_cpt_for_now"
+  ],
+  "go_criteria": [
+    "CPT candidate improves held-out domain loss and source-grounded correctness.",
+    "No increase in unsafe veterinary confidence on safety sanity probes.",
+    "No major species-specific regression for buffalo, calf, or ox/bullock slices.",
+    "CPT benefit exceeds or complements retrieval-only baseline."
+  ],
+  "minimum_evidence_required": [
+    "base_model_domain_loss_report",
+    "held_out_source_grounding_report",
+    "open_book_vs_closed_book_comparison",
+    "safety_sanity_probe_report",
+    "general_hinglish_retention_report"
+  ],
+  "no_go_criteria": [
+    "Perplexity improves but knowledge probes do not.",
+    "Retrieval-only baseline matches or beats CPT on factuality.",
+    "CPT increases unsafe confidence or species confusion.",
+    "Evaluation leakage is detected between train and held-out source families."
+  ],
+  "notes": "This template is for research readiness only and must not approve training or model promotion.",
+  "research_version": "cpt-dapt-research-v1",
+  "status": "TEMPLATE_NOT_DECIDED"
+}

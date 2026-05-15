@@ -1,0 +1,27 @@
+{
+  "id": "nehak76044/pashupulse-base-vs-250-judge-v4",
+  "title": "PashuPulse Base vs 250 Judge V4",
+  "code_file": "final_eval_base_vs_250.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nehak76044/pashupulse-final-eval-local-judge-input",
+    "nehak76044/pashupulse-sft-checkpoint-adapters",
+    "nehak76044/pashupulse-final-eval-predictions-v9"
+  ],
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1",
+    "qwen-lm/qwen2.5/Transformers/7b-instruct/1",
+    "google/gemma-4/Transformers/gemma-4-4b-it/1"
+  ],
+  "competition_sources": [],
+  "keywords": [
+    "pashupulse",
+    "final-eval",
+    "llm-judge",
+    "t4"
+  ]
+}

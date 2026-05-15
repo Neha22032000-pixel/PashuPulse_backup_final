@@ -1,0 +1,151 @@
+{
+  "project": "pashu_saathi",
+  "dataset_name": "pashu-saathi-pilot-expansion-v1",
+  "created_at_utc": "2026-05-09T09:02:21.020788+00:00",
+  "scope": [
+    "cow",
+    "buffalo",
+    "ox",
+    "calf"
+  ],
+  "languages_required": [
+    "english",
+    "hinglish"
+  ],
+  "languages_optional": [
+    "hindi_devanagari"
+  ],
+  "approval_state_order": [
+    "BLOCKED_PENDING_SEED_APPROVAL",
+    "BLOCKED_PENDING_PILOT_APPROVAL",
+    "APPROVED_FOR_SEED_ONLY",
+    "APPROVED_FOR_EXPANSION",
+    "APPROVED_FOR_SFT"
+  ],
+  "approval_state": "BLOCKED_PENDING_PILOT_APPROVAL",
+  "seed_bank_version": "seed-bank-v4",
+  "expansion_version": "pilot-expansion-v1",
+  "seed_family_count": 100,
+  "seed_count": 300,
+  "split_counts": {
+    "dev_seed": 45,
+    "final_eval_seed": 45,
+    "train_seed": 210
+  },
+  "family_bucket_counts": {
+    "image_caption_uncertainty": 45,
+    "red_emergency": 60,
+    "routine_green": 75,
+    "rural_pressure_myth": 45,
+    "yellow_triage": 75
+  },
+  "row_counts": {
+    "sft_train": 210,
+    "sft_dev": 45,
+    "final_eval": 45
+  },
+  "expansion_allowed": false,
+  "sft_allowed": false,
+  "pilot_validation_only": true,
+  "checksums": {
+    "source_claims_sha256": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+    "seed_cases_sha256": "b07678a25750bc563e4664ce63bf22ab6a99bf0b1ad7f3b5353732eb261dcaeb",
+    "sft_train_sha256": "aef3011097d1620b59ecd24da7d3a59b468c784bde1add84b632634b1b78c8e4",
+    "sft_dev_sha256": "959e7cd2790d5b2709a7a36ae7979966e023544637908329c7c68fb3154ea925",
+    "final_eval_sha256": "7c2a4424aa0c7542e4ec0af53b87c491771c6609fc79baa64ef942fe0d0137e7",
+    "approval_bundle_sha256": "a3fa635ab7388ce9522d85efdc370e0eae85e11943514f7c13b53647d34762ea"
+  },
+  "reviewer_state": [
+    {
+      "role": "source",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a3fa635ab7388ce9522d85efdc370e0eae85e11943514f7c13b53647d34762ea"
+    },
+    {
+      "role": "safety",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a3fa635ab7388ce9522d85efdc370e0eae85e11943514f7c13b53647d34762ea"
+    },
+    {
+      "role": "language",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a3fa635ab7388ce9522d85efdc370e0eae85e11943514f7c13b53647d34762ea"
+    },
+    {
+      "role": "eval",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a3fa635ab7388ce9522d85efdc370e0eae85e11943514f7c13b53647d34762ea"
+    }
+  ],
+  "tag_counts": {
+    "FMD-like signs": 12,
+    "abortion cluster": 3,
+    "bloat": 15,
+    "breathing": 9,
+    "buffalo": 86,
+    "calf": 57,
+    "calf diarrhea/dehydration": 15,
+    "calf feeding/warmth": 21,
+    "calving trouble": 15,
+    "cold care": 6,
+    "cow": 95,
+    "dev_seed": 45,
+    "diarrhea": 3,
+    "english": 100,
+    "feeding": 18,
+    "final_eval_seed": 45,
+    "green": 75,
+    "green routine": 75,
+    "heat stress": 12,
+    "hinglish": 200,
+    "image-caption uncertainty": 45,
+    "image_caption_uncertainty": 45,
+    "local shop injection pressure": 3,
+    "mastitis/milk hygiene": 30,
+    "medicine request": 15,
+    "milk safety": 30,
+    "mineral awareness": 3,
+    "monsoon shed hygiene": 12,
+    "neurological signs": 9,
+    "ox": 62,
+    "ox workload/yoke injury": 15,
+    "ox yoke/hoof injury": 24,
+    "poisoning/spoiled feed": 6,
+    "red": 72,
+    "red emergency": 60,
+    "red_emergency": 60,
+    "remedy pressure": 45,
+    "reportable": 21,
+    "routine check": 12,
+    "routine_green": 75,
+    "rural_pressure_myth": 45,
+    "shed hygiene": 18,
+    "snake/dog bite": 9,
+    "spoiled feed": 6,
+    "sudden death/carcass risk": 6,
+    "train_seed": 210,
+    "water": 9,
+    "working ox": 12,
+    "wounds/maggots": 24,
+    "yellow": 153,
+    "yellow triage": 81,
+    "yellow_triage": 75
+  },
+  "blocked_reason": "Pilot expansion is blocked from SFT export and scale-up until row-level reports and external pilot approvals pass."
+}

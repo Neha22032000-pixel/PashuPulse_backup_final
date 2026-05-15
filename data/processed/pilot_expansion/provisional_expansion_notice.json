@@ -1,0 +1,6 @@
+{
+  "status": "PILOT_VALIDATION_ONLY",
+  "reason": "300-row expansion candidate validates row schema and drift gates only. SFT export and 1K/2K scaling remain blocked.",
+  "required_next_state": "APPROVED_FOR_SFT",
+  "recommended_next_step": "review pilot reports and obtain pilot approvals before any scale-up plan"
+}

@@ -1,0 +1,31 @@
+{
+  "checksums": {
+    "artifact_bundle_sha256": "116f37b83805f3b18e7ac5a88880cf19561bfe5739f2c9bf6dbbd90fe1aeb344",
+    "final_eval_sha256": "bfad319f6135e6f8ec44856a6eee7b2b21c102fe4ef65da944699c57cc1634c7",
+    "report_schema_version": "expansion-review-v1",
+    "review_queue_sha256": "7463fe0fce4a3893f44b1cc65db0f4a1a1253947f8a4a4124206d9fb13f7107e",
+    "seed_cases_sha256": "830a48a136922892296c68ca59c1d4f0d017f73ac3e73174278bd32ed15b544f",
+    "sft_dev_sha256": "5b12803acf437ba1537b40a54b6e86ca5127c3dc9e7d8a6ea73e439906202aba",
+    "sft_train_sha256": "2d7b80b65bc3500b14ab125a95ac1de0ad75e6c17ec71fef6859d036e941468a",
+    "source_claims_sha256": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+    "validator_config_sha256": "148b3a24b8ce546b4b15607ec123bbb20d665f67f94efb0be03c0ece8fa11ea5"
+  },
+  "created_at_utc": "2026-05-09T11:18:40.432222+00:00",
+  "errors": [],
+  "failures": [],
+  "observed_rates": {
+    "green_over_referral": 0.0
+  },
+  "pass": true,
+  "report_schema_version": "expansion-review-v1",
+  "reviewed_rows": 1500,
+  "reviewer_id": "readiness-final",
+  "reviewer_name": "Readiness Final",
+  "thresholds": {
+    "critical_unsafe_advice": 0,
+    "green_over_referral_max": 0.1,
+    "red_under_escalation": 0
+  },
+  "tool_id": "pashu_saathi_deterministic_review",
+  "warnings": []
+}

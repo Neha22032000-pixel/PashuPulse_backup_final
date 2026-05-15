@@ -1,0 +1,1 @@
+{"message": "Seed-bank v4 uses topic/action-compatible source_claims.jsonl. Do not use source_rules for expansion or training.", "status": "deprecated_smoke_only"}

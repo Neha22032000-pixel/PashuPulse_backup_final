@@ -1,0 +1,133 @@
+{
+  "errors": [],
+  "warnings": [],
+  "row_count": 1500,
+  "structure_limit": 0.18,
+  "phrase_limit": 0.12,
+  "top_openings": [
+    [
+      "for this image-caption {animal} check, mention uncertainty from the photo and avoid naming a confirmed disease.",
+      12
+    ],
+    [
+      "for this image-caption {animal} check, use the caption and farmer checks together; the photo alone is not diagnosis.",
+      12
+    ],
+    [
+      "for this image-caption generic check, mention uncertainty from the photo and avoid naming a confirmed disease.",
+      12
+    ],
+    [
+      "for this image-caption generic check, use the caption and farmer checks together; the photo alone is not diagnosis.",
+      12
+    ],
+    [
+      "for this image-caption milk check, mention uncertainty from the photo and avoid naming a confirmed disease.",
+      6
+    ],
+    [
+      "for this image-caption milk check, use the caption and farmer checks together; the photo alone is not diagnosis.",
+      6
+    ],
+    [
+      "for this image-caption fmd check, mention uncertainty from the photo and avoid naming a confirmed disease.",
+      6
+    ],
+    [
+      "for this image-caption fmd check, use the caption and farmer checks together; the photo alone is not diagnosis.",
+      6
+    ],
+    [
+      "do not turn this into treatment advice for shed floor dry; stay with observation, rest, hygiene, water, and red flags.",
+      3
+    ],
+    [
+      "ask whether dry shed floor is linked to recent feed, weather, work, calving, milking, bite, wound, or herd spread.",
+      3
+    ]
+  ],
+  "top_closings": [
+    [
+      "close note for this image-caption {animal} check: repeat the simple checks later and keep the animal comfortable.",
+      12
+    ],
+    [
+      "close note for this image-caption {animal} check: write down changes before the next decision.",
+      12
+    ],
+    [
+      "close note for this image-caption {animal} check: keep this offline checklist with the family.",
+      12
+    ],
+    [
+      "close note for this image-caption {animal} check: share only these observations with helpers.",
+      12
+    ],
+    [
+      "close note for this image-caption {animal} check: stop if anything starts looking unsafe.",
+      12
+    ],
+    [
+      "close note for this image-caption generic check: repeat the simple checks later and keep the animal comfortable.",
+      12
+    ],
+    [
+      "close note for this image-caption generic check: write down changes before the next decision.",
+      12
+    ],
+    [
+      "close note for this image-caption generic check: keep this offline checklist with the family.",
+      12
+    ],
+    [
+      "close note for this image-caption generic check: share only these observations with helpers.",
+      12
+    ],
+    [
+      "close note for this image-caption generic check: stop if anything starts looking unsafe.",
+      12
+    ]
+  ],
+  "top_structures": [
+    [
+      "safe_step>red_flag>boundary>style",
+      228
+    ],
+    [
+      "boundary>safe_step>safe_step>red_flag>style",
+      228
+    ],
+    [
+      "boundary>safe_step>must_ask>red_flag>style",
+      228
+    ],
+    [
+      "must_ask>safe_step>boundary>red_flag>style",
+      183
+    ],
+    [
+      "must_ask>must_ask>safe_step>red_flag>boundary>style",
+      154
+    ],
+    [
+      "must_ask>must_ask>safe_step>red_flag>boundary>boundary>style",
+      146
+    ],
+    [
+      "safe_step>red_flag>boundary>boundary>style",
+      72
+    ],
+    [
+      "boundary>safe_step>safe_step>red_flag>boundary>style",
+      72
+    ],
+    [
+      "must_ask>safe_step>boundary>red_flag>boundary>style",
+      72
+    ],
+    [
+      "boundary>safe_step>must_ask>red_flag>boundary>style",
+      72
+    ]
+  ]
+}

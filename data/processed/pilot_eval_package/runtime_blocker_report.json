@@ -1,0 +1,28 @@
+{
+  "EVAL_ONLY_DO_NOT_TRAIN": true,
+  "backend_result": {
+    "error": "Kaggle credentials and the reportable eval script exist, but readiness requires downloaded reportable predictions. Run pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py on Kaggle, then set PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE to the downloaded baseline_predictions.jsonl.",
+    "predictions_file": "",
+    "ran": false,
+    "reportable": false
+  },
+  "created_at_utc": "2026-05-09T11:57:08.427878+00:00",
+  "exact_next_action": {
+    "KAGGLE_CONFIG_DIR": "C:\\Users\\risha\\Documents\\New project 5\\.kaggle_2",
+    "prediction_import_env": "PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE",
+    "required_backend": "reportable base Gemma and prompt-only Gemma inference",
+    "script_to_run": "pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py"
+  },
+  "runtime": {
+    "available": false,
+    "backend": "kaggle",
+    "blocker": "Kaggle credentials and the reportable eval script exist, but readiness requires downloaded reportable predictions. Run pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py on Kaggle, then set PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE to the downloaded baseline_predictions.jsonl.",
+    "kaggle_config_dir": "C:\\Users\\risha\\Documents\\New project 5\\.kaggle_2",
+    "required_config": {
+      "KAGGLE_CONFIG_DIR": "C:\\Users\\risha\\Documents\\New project 5\\.kaggle_2",
+      "prediction_import_env": "PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE",
+      "required_backend": "reportable base Gemma and prompt-only Gemma inference",
+      "script_to_run": "pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py"
+    }
+  }
+}

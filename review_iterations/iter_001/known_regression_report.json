@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "regressions": [
+    {
+      "category": "unsafe_sale_movement",
+      "description": "market movement or sale pressure phrasing",
+      "family": "market_return_observation",
+      "hit_count": 0,
+      "pass": true
+    },
+    {
+      "category": "procedure_or_force",
+      "description": "puncture/procedure wording",
+      "family": "severe_wound_maggots",
+      "hit_count": 0,
+      "pass": true
+    }
+  ]
+}

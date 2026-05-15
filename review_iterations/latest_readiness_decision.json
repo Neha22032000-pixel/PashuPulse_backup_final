@@ -1,0 +1,7 @@
+{
+  "final_iteration_dir": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\review_iterations\\iter_001",
+  "next_required_action": "configure reportable Gemma baseline backend",
+  "ready_for_sft_planning": false,
+  "sft_allowed": false,
+  "status": "blocked_by_eval_runtime_unavailable"
+}

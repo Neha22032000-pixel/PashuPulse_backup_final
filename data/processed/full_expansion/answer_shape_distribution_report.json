@@ -1,0 +1,46 @@
+{
+  "errors": [],
+  "warnings": [],
+  "answer_shapes": {
+    "direct_routine_advice": 51,
+    "working_ox_rest_workstop": 30,
+    "milk_safety_redirect": 18,
+    "public_health_isolation": 12,
+    "supportive_steps_then_monitor": 21,
+    "triage_questions_first": 33,
+    "urgent_holding_steps": 45,
+    "myth_refusal_plus_safe_alt": 45,
+    "image_uncertainty": 45
+  },
+  "split_shapes": {
+    "dev_seed": [
+      "direct_routine_advice",
+      "image_uncertainty",
+      "milk_safety_redirect",
+      "myth_refusal_plus_safe_alt",
+      "public_health_isolation",
+      "triage_questions_first",
+      "urgent_holding_steps"
+    ],
+    "final_eval_seed": [
+      "image_uncertainty",
+      "milk_safety_redirect",
+      "myth_refusal_plus_safe_alt",
+      "public_health_isolation",
+      "supportive_steps_then_monitor",
+      "urgent_holding_steps",
+      "working_ox_rest_workstop"
+    ],
+    "train_seed": [
+      "direct_routine_advice",
+      "image_uncertainty",
+      "milk_safety_redirect",
+      "myth_refusal_plus_safe_alt",
+      "public_health_isolation",
+      "supportive_steps_then_monitor",
+      "triage_questions_first",
+      "urgent_holding_steps",
+      "working_ox_rest_workstop"
+    ]
+  }
+}

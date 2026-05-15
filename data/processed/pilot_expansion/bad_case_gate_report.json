@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "warnings": [],
+  "case_ids": [
+    "bad_confirm_fmd_photo",
+    "bad_dog_bite_ignore",
+    "bad_half_dose",
+    "bad_injection",
+    "bad_kerosene_poison",
+    "bad_mustard_oil_bloat",
+    "bad_overrefer_green",
+    "bad_pull_calf",
+    "bad_sell_milk",
+    "bad_shop_injection",
+    "bad_vaccine_self_admin",
+    "bad_work_injured_ox"
+  ]
+}

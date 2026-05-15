@@ -1,0 +1,56 @@
+{
+  "checksums": {
+    "adversarial_audit_prompts.jsonl_sha256": "676ac87010c3885f2fc6e4aff74e80afc3e7602980b7e43e37f98a23a9850dbb",
+    "contamination_guard_report.json_sha256": "5ad182f89bbe913d6be13f549580b1fd431d1e847d9de6abe3096f8d25c95a54",
+    "eval_manifest.json_sha256": "886b6a7e45a6aed7ac05246e77fdbe1c5d84f46f601ba1fab13572dd221884fb",
+    "eval_rubric.jsonl_sha256": "2ac3acd12eaf3f1519b59a9a7678d9563494009e0439064715a7a904a8a89ce9",
+    "eval_rubric_validation_report.json_sha256": "85c670ab9a14f695042329ca7243395e0a242c0e64ba361cf6b578bc2398f611"
+  },
+  "created_at_utc": "2026-05-09T11:57:08.598310+00:00",
+  "mock_allowed": false,
+  "package_type": "eval_only",
+  "readiness_decision": {
+    "EVAL_ONLY_DO_NOT_TRAIN": true,
+    "backend": {
+      "available": false,
+      "backend": "kaggle",
+      "blocker": "Kaggle credentials and the reportable eval script exist, but readiness requires downloaded reportable predictions. Run pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py on Kaggle, then set PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE to the downloaded baseline_predictions.jsonl.",
+      "kaggle_config_dir": "C:\\Users\\risha\\Documents\\New project 5\\.kaggle_2",
+      "required_config": {
+        "KAGGLE_CONFIG_DIR": "C:\\Users\\risha\\Documents\\New project 5\\.kaggle_2",
+        "prediction_import_env": "PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE",
+        "required_backend": "reportable base Gemma and prompt-only Gemma inference",
+        "script_to_run": "pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py"
+      }
+    },
+    "backend_result": {
+      "error": "Kaggle credentials and the reportable eval script exist, but readiness requires downloaded reportable predictions. Run pashu_saathi/kaggle_gemma_eval/gemma_lora_eval.py on Kaggle, then set PASHU_SAATHI_REPORTABLE_PREDICTIONS_FILE to the downloaded baseline_predictions.jsonl.",
+      "predictions_file": "",
+      "ran": false,
+      "reportable": false
+    },
+    "baseline_score_pass": false,
+    "checksums": {
+      "eval_prompts_sha256": "cb7c1b3a644217d86d353906eca3ecfbac7f0dd4fa762f5a2035960bbc565e68",
+      "eval_rubric_sha256": "2ac3acd12eaf3f1519b59a9a7678d9563494009e0439064715a7a904a8a89ce9",
+      "final_eval_sha256": "7eb85075af1dec3c09f5096d623ee0673daab66570eaa07a2f7d3671cf7b9272",
+      "scorer_config_sha256": "ee43efcd1adea0f94dca42bc0db953fef18994031824e7239d960abf6dd3aeb3",
+      "seed_cases_sha256": "514ff5510060a4d47f23dbc7ba19315fabb3742c9c05826788312dcd1df940ad",
+      "source_claims_sha256": "ef90b88478d8a2bc67b91571f9d01c19185a45c8b9756fc56471c0e746967fda"
+    },
+    "contamination_guard_pass": true,
+    "created_at_utc": "2026-05-09T11:57:08.429894+00:00",
+    "decision": "blocked_by_eval_runtime_unavailable",
+    "rubric_pass": true,
+    "sft_allowed": false,
+    "valid_decisions": [
+      "ready_for_sft_planning",
+      "blocked_by_eval_runtime_unavailable",
+      "blocked_by_eval_contract_invalid",
+      "blocked_by_eval_failures",
+      "blocked_by_source_or_safety_regression"
+    ]
+  },
+  "source_eval_dir": "pashu_saathi\\data\\processed\\pilot_eval_package",
+  "status": "EVAL_ONLY_DO_NOT_TRAIN"
+}

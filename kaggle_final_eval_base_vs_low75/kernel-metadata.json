@@ -1,0 +1,24 @@
+{
+  "id": "nehak76044/pashupulse-base-vs-low75",
+  "title": "PashuPulse Base vs Low75",
+  "code_file": "final_eval_base_vs_low75.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nehak76044/pashupulse-final-eval-local-judge-input",
+    "nehak76044/pashupulse-low-lr-checkpoint-75"
+  ],
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1",
+    "qwen-lm/qwen2.5/Transformers/7b-instruct/1"
+  ],
+  "competition_sources": [],
+  "keywords": [
+    "pashupulse",
+    "eval",
+    "t4"
+  ]
+}

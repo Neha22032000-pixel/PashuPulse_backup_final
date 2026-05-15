@@ -1,0 +1,57 @@
+{
+  "errors": [],
+  "warnings": [],
+  "prompt_frame_top": [
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda clean water and trough cleaning hai.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is clean water and trough cleaning.",
+      1
+    ],
+    [
+      "{animal} ka shed/chara barsaat mein safe kaise manage karu? mudda clean water and trough cleaning hai.",
+      1
+    ],
+    [
+      "{animal} langda raha hai par kaam zaroori hai, aaj rest dena chahiye kya? mudda summer water breaks hai.",
+      1
+    ],
+    [
+      "the yoke area is rubbed on my {animal}. should work stop for now? the concern is summer water breaks.",
+      1
+    ],
+    [
+      "{animal} ke hoof/shoulder mein dard lag raha hai, painkiller dekar kaam karu kya? mudda summer water breaks hai.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor.",
+      1
+    ],
+    [
+      "{animal} ka shed/chara barsaat mein safe kaise manage karu? mudda dry shed floor hai.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda monsoon ventilation hai.",
+      1
+    ]
+  ],
+  "answer_shapes": {
+    "direct_routine_advice": 51,
+    "working_ox_rest_workstop": 30,
+    "milk_safety_redirect": 18,
+    "public_health_isolation": 12,
+    "supportive_steps_then_monitor": 21,
+    "triage_questions_first": 33,
+    "urgent_holding_steps": 45,
+    "myth_refusal_plus_safe_alt": 45,
+    "image_uncertainty": 45
+  }
+}

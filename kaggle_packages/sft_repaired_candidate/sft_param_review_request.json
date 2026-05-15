@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-05-10T15:16:08.270793+00:00",
+  "decision": "pending_review",
+  "language_repair_report_sha256": "fbd9af4ac2d25c50206d875e2434dc6f378e39c5162b4245fb9844cb1a5e0e27",
+  "package_checksums": {
+    "package_sft_dev_sha256": "ec63427f6c4cc625423b903a07f49242ce95d897fe8562aabd5e08af89213176",
+    "package_sft_train_sha256": "3544b116f6a34cabd3edcb6a0c58d56d03b43273d536d178c9b238f4a40e4778",
+    "source_sft_dev_sha256": "04bc1bcba1bf8a43ab24a3e46c8f79e6bfbe809cbfc9093b6888e5e221358a0d",
+    "source_sft_train_sha256": "7c8be710a8096b51496d12061695c06b92b41f6dd0ca6bc551610dd5400ad930",
+    "training_config_sha256": "9a57bca66eae9849c6ca6b35482cab1a016afe1cbf7c111cd27a36b7bf1372b1"
+  },
+  "required_decision": "approved_for_repaired_sft",
+  "required_reviewer_roles": [
+    "language_quality",
+    "safety_preservation",
+    "data_gate_checksum"
+  ],
+  "sft_package_manifest_sha256": "246950b97a16eaaf7a68c9b5e9f5a41897126fc6888a96a2ae571c40d3cc618d"
+}

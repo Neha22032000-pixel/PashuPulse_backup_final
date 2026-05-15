@@ -1,0 +1,46 @@
+{
+  "blocked_until_research_complete": [
+    "CPT training parameters",
+    "Kaggle launch",
+    "SFT after CPT",
+    "model promotion"
+  ],
+  "experiments": [
+    {
+      "experiment_id": "base_gemma",
+      "purpose": "Measure baseline domain loss and knowledge probes before CPT.",
+      "uses_cpt": false,
+      "uses_retrieval": false
+    },
+    {
+      "corpus_variant": "raw_clean_cpt",
+      "experiment_id": "raw_cpt",
+      "purpose": "Test whether cleaned livestock text improves domain distribution modeling and latent familiarity.",
+      "uses_cpt": true,
+      "uses_retrieval": false
+    },
+    {
+      "corpus_variant": "reading_comprehension_cpt",
+      "experiment_id": "rc_cpt",
+      "purpose": "Test whether source-derived reading-comprehension style data improves knowledge access.",
+      "uses_cpt": true,
+      "uses_retrieval": false
+    },
+    {
+      "corpus_variant": "mixed_raw_rc_replay",
+      "experiment_id": "mixed_cpt",
+      "purpose": "Test raw domain exposure plus small RC/general replay for grounding and forgetting control.",
+      "uses_cpt": true,
+      "uses_retrieval": false
+    },
+    {
+      "experiment_id": "rag_baseline",
+      "purpose": "Test whether offline retrieval alone solves grounding better than weight updates.",
+      "uses_cpt": false,
+      "uses_retrieval": true
+    }
+  ],
+  "research_version": "cpt-dapt-research-v1",
+  "status": "RESEARCH_DESIGN_ONLY",
+  "training_params_defined": false
+}

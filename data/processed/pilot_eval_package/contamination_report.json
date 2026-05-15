@@ -1,0 +1,8 @@
+{
+  "EVAL_ONLY_DO_NOT_TRAIN": true,
+  "adversarial_rows_included": 8,
+  "dev_rows_included": 0,
+  "final_eval_rows_included": 225,
+  "pass": true,
+  "train_rows_included": 0
+}

@@ -1,0 +1,10 @@
+[project]
+name = "pashu-saathi"
+version = "0.1.0"
+description = "Source-grounded rural livestock companion dataset and Gemma SFT gates."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

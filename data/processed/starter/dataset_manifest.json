@@ -1,0 +1,146 @@
+{
+  "project": "pashu_saathi",
+  "dataset_name": "pashu-saathi-seed-bank-v4",
+  "created_at_utc": "2026-05-09T08:58:33.060992+00:00",
+  "scope": [
+    "cow",
+    "buffalo",
+    "ox",
+    "calf"
+  ],
+  "languages_required": [
+    "english",
+    "hinglish"
+  ],
+  "languages_optional": [
+    "hindi_devanagari"
+  ],
+  "approval_state_order": [
+    "BLOCKED_PENDING_SEED_APPROVAL",
+    "BLOCKED_PENDING_PILOT_APPROVAL",
+    "APPROVED_FOR_SEED_ONLY",
+    "APPROVED_FOR_EXPANSION",
+    "APPROVED_FOR_SFT"
+  ],
+  "approval_state": "BLOCKED_PENDING_SEED_APPROVAL",
+  "seed_bank_version": "seed-bank-v4",
+  "seed_family_count": 100,
+  "seed_count": 300,
+  "split_counts": {
+    "dev_seed": 45,
+    "final_eval_seed": 45,
+    "train_seed": 210
+  },
+  "family_bucket_counts": {
+    "image_caption_uncertainty": 45,
+    "red_emergency": 60,
+    "routine_green": 75,
+    "rural_pressure_myth": 45,
+    "yellow_triage": 75
+  },
+  "row_counts": {
+    "sft_train": 0,
+    "sft_dev": 0,
+    "final_eval": 0
+  },
+  "expansion_allowed": false,
+  "sft_allowed": false,
+  "checksums": {
+    "source_claims_sha256": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+    "seed_cases_sha256": "b07678a25750bc563e4664ce63bf22ab6a99bf0b1ad7f3b5353732eb261dcaeb",
+    "approval_bundle_sha256": "a73964fff51d7154d249aad462f4396a4446b04154fddccfac0316b19c6ba729"
+  },
+  "reviewer_state": [
+    {
+      "role": "source",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a73964fff51d7154d249aad462f4396a4446b04154fddccfac0316b19c6ba729"
+    },
+    {
+      "role": "safety",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a73964fff51d7154d249aad462f4396a4446b04154fddccfac0316b19c6ba729"
+    },
+    {
+      "role": "language",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a73964fff51d7154d249aad462f4396a4446b04154fddccfac0316b19c6ba729"
+    },
+    {
+      "role": "eval",
+      "reviewer_id": "",
+      "reviewer_name": "",
+      "timestamp": "",
+      "status": "pending",
+      "notes": "",
+      "approval_bundle_sha256": "a73964fff51d7154d249aad462f4396a4446b04154fddccfac0316b19c6ba729"
+    }
+  ],
+  "tag_counts": {
+    "FMD-like signs": 12,
+    "abortion cluster": 3,
+    "bloat": 15,
+    "breathing": 9,
+    "buffalo": 86,
+    "calf": 57,
+    "calf diarrhea/dehydration": 15,
+    "calf feeding/warmth": 21,
+    "calving trouble": 15,
+    "cold care": 6,
+    "cow": 95,
+    "dev_seed": 45,
+    "diarrhea": 3,
+    "english": 100,
+    "feeding": 18,
+    "final_eval_seed": 45,
+    "green": 75,
+    "green routine": 75,
+    "heat stress": 12,
+    "hinglish": 200,
+    "image-caption uncertainty": 45,
+    "image_caption_uncertainty": 45,
+    "local shop injection pressure": 3,
+    "mastitis/milk hygiene": 30,
+    "medicine request": 15,
+    "milk safety": 30,
+    "mineral awareness": 3,
+    "monsoon shed hygiene": 12,
+    "neurological signs": 9,
+    "ox": 62,
+    "ox workload/yoke injury": 15,
+    "ox yoke/hoof injury": 24,
+    "poisoning/spoiled feed": 6,
+    "red": 72,
+    "red emergency": 60,
+    "red_emergency": 60,
+    "remedy pressure": 45,
+    "reportable": 21,
+    "routine check": 12,
+    "routine_green": 75,
+    "rural_pressure_myth": 45,
+    "shed hygiene": 18,
+    "snake/dog bite": 9,
+    "spoiled feed": 6,
+    "sudden death/carcass risk": 6,
+    "train_seed": 210,
+    "water": 9,
+    "working ox": 12,
+    "wounds/maggots": 24,
+    "yellow": 153,
+    "yellow triage": 81,
+    "yellow_triage": 75
+  },
+  "blocked_reason": "No expansion or SFT export until source, safety, language, and eval reviewers approve this exact checksum."
+}

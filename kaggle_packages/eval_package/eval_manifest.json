@@ -1,0 +1,11 @@
+{
+  "adversarial_prompts": 8,
+  "base_gemma_runnable": false,
+  "baseline_blocker": "No local/Kaggle baseline execution has been run by this packaging step.",
+  "created_at_utc": "2026-05-09T11:18:45.854954+00:00",
+  "eval_prompt_count": 233,
+  "final_eval_rows": 225,
+  "mock_eval_allowed": false,
+  "prompt_only_baseline_runnable": false,
+  "status": "EVAL_ONLY_DO_NOT_TRAIN"
+}

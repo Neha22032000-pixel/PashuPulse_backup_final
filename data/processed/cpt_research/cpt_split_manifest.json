@@ -1,0 +1,182 @@
+{
+  "chunk_manifest_sha256": "4346bb25dd76d61973f704ad20b4b8a99b87f587eddbbe445bdf2f8d4f11b822",
+  "created_date": "2026-05-15",
+  "leakage_policy": "No source_id may appear in more than one split; eval probes use test sources only.",
+  "research_version": "cpt-dapt-research-v1",
+  "source_manifest_sha256": "39f1c163bd4a5cecb90a438723acbffe6ffcc3701bfea946df2950167b31f82b",
+  "split_unit": "source_id",
+  "splits": {
+    "dev": {
+      "chunk_count": 1971,
+      "language_counts": {
+        "en": 8,
+        "hi": 1
+      },
+      "source_count": 9,
+      "source_ids": [
+        "dahd_nadcp",
+        "icar_buffalo_adoption",
+        "icar_buffalo_livelihood",
+        "nddb_climate_smart_dairying",
+        "nddb_good_dairy_husbandry",
+        "nddb_hi_vaccination_schedule",
+        "penn_state_dairy",
+        "umn_heat_feedlot",
+        "wisc_grazing_heat"
+      ],
+      "species_counts": {
+        "buffalo": 6,
+        "calf": 3,
+        "cow": 7,
+        "ox/bullock": 1
+      },
+      "token_estimate": 1475171,
+      "topic_counts": {
+        "FMD-like signs": 2,
+        "animal health": 1,
+        "bites": 1,
+        "breeding": 1,
+        "brucellosis": 1,
+        "buffalo": 1,
+        "farm operations": 3,
+        "feeding": 5,
+        "health": 1,
+        "heat/cold stress": 2,
+        "housing": 2,
+        "milk hygiene": 2,
+        "movement control": 1,
+        "shed hygiene": 1,
+        "water": 3,
+        "working ox care": 1
+      }
+    },
+    "test": {
+      "chunk_count": 45,
+      "language_counts": {
+        "en": 8,
+        "hi": 1
+      },
+      "source_count": 9,
+      "source_ids": [
+        "fao_dairy_feeding",
+        "fao_dairy_reproduction",
+        "fao_draught_animal_power",
+        "fao_draught_performance",
+        "icar_extension_constraints",
+        "msd_mastitis",
+        "nddb_hi_reproduction",
+        "nddb_ration_balancing",
+        "nddb_zoonosis_gi"
+      ],
+      "species_counts": {
+        "buffalo": 7,
+        "calf": 2,
+        "cow": 9,
+        "ox/bullock": 2
+      },
+      "token_estimate": 29559,
+      "topic_counts": {
+        "diarrhea": 1,
+        "extension": 1,
+        "farm operations": 2,
+        "feeding": 2,
+        "hygiene": 1,
+        "mastitis": 1,
+        "milk hygiene": 1,
+        "nutrition": 2,
+        "pregnancy/calving": 2,
+        "reproduction": 2,
+        "welfare": 2,
+        "working ox care": 2
+      }
+    },
+    "train": {
+      "chunk_count": 1783,
+      "language_counts": {
+        "en": 38,
+        "hi": 4
+      },
+      "source_count": 42,
+      "source_ids": [
+        "animal_welfare_calf_transport",
+        "cgiar_climate_smart_farmers_manual",
+        "dahd_lhdcp",
+        "fao_buffaloes",
+        "fao_dairy_disease",
+        "fao_dairy_first_aid",
+        "fao_dairy_housing",
+        "fao_dairy_index",
+        "fao_dairy_parasites",
+        "fao_good_dairy_practice_pdf",
+        "fao_smallholder_dairying",
+        "msd_bloat",
+        "msd_buffalo_parasite_image",
+        "msd_intestinal_cattle",
+        "msd_nutrition_disorders",
+        "msd_udder_disorders",
+        "nddb_aflatoxicosis",
+        "nddb_animal_nutrition",
+        "nddb_bloat",
+        "nddb_brucellosis",
+        "nddb_calf_nutrition",
+        "nddb_cattle_feed",
+        "nddb_clean_milk",
+        "nddb_fly_control",
+        "nddb_hi_animal_nutrition",
+        "nddb_hi_new_feed",
+        "nddb_hi_ration_balance",
+        "nddb_mastitis",
+        "nddb_surra_hi",
+        "nddb_vaccination_schedule",
+        "nddb_water",
+        "umn_dairy",
+        "umn_heat_dairy",
+        "wisc_animal_handling_heat",
+        "wisc_calf_cold_stress",
+        "wisc_calf_heat_stress",
+        "wisc_dairy_heat_mammary",
+        "wisc_dairy_summer_ration",
+        "wisc_dry_cow_heat",
+        "wisc_heat_facilities",
+        "woah_dairy_welfare_2014",
+        "woah_terrestrial_code"
+      ],
+      "species_counts": {
+        "buffalo": 27,
+        "calf": 18,
+        "cow": 37,
+        "ox/bullock": 1
+      },
+      "token_estimate": 1318876,
+      "topic_counts": {
+        "FMD-like signs": 1,
+        "animal health": 7,
+        "bites": 1,
+        "bloat": 5,
+        "buffalo": 2,
+        "calf care": 5,
+        "dairy husbandry": 1,
+        "diarrhea": 2,
+        "disease control": 1,
+        "escalation": 1,
+        "extension": 1,
+        "farm operations": 1,
+        "feeding": 14,
+        "heat/cold stress": 10,
+        "housing": 3,
+        "mastitis": 1,
+        "milk hygiene": 6,
+        "milk production": 1,
+        "nutrition": 3,
+        "parasites": 3,
+        "poisoning/spoiled feed": 1,
+        "pregnancy/calving": 3,
+        "shed hygiene": 3,
+        "smallholder": 1,
+        "water": 4,
+        "welfare": 6,
+        "wounds": 3
+      }
+    }
+  }
+}

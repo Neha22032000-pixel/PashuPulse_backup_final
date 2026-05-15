@@ -1,0 +1,115 @@
+{
+  "errors": [],
+  "warnings": [],
+  "row_count": 300,
+  "top_openings": [
+    [
+      "this sounds urgent, but i cannot diagnose or prescribe.",
+      60
+    ],
+    [
+      "i cannot confirm a disease from a photo or caption.",
+      45
+    ],
+    [
+      "for mustard oil for bloat pressure, do not say to give mustard oil or drench.",
+      3
+    ],
+    [
+      "for random antibiotic pressure, do not say to give random antibiotics.",
+      3
+    ],
+    [
+      "for painkiller to keep {animal} working, do not say to give painkiller and continue work.",
+      3
+    ],
+    [
+      "for chilli or ash on wound, do not say to put chilli, ash, lime, or irritants inside wound.",
+      3
+    ],
+    [
+      "for hard {animal} pulling pressure, do not say to pull the {animal} hard.",
+      3
+    ],
+    [
+      "for kerosene or alcohol antidote pressure, do not say to give kerosene or alcohol.",
+      3
+    ],
+    [
+      "for puncture swelling pressure, do not say to puncture or cut swelling.",
+      3
+    ],
+    [
+      "for force-feed weak {animal} pressure, do not say to force-feed the weak {animal}.",
+      3
+    ]
+  ],
+  "top_closings": [
+    [
+      "for this animal, contact a vet, animal health worker, pashu sakhi, or dairy cooperative when reachable if the red flags appear.",
+      45
+    ],
+    [
+      "for shed floor dry, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for monsoon ventilation, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for fodder dry storage, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for gradual feed change, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for mineral salt awareness, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for {animal} clean bedding, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for {animal} suckling observation, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for {animal} rest after work, do not give medicines, injections, or doses for routine care.",
+      3
+    ],
+    [
+      "for {animal} yoke fit check, do not give medicines, injections, or doses for routine care.",
+      3
+    ]
+  ],
+  "top_structures": [
+    [
+      "safe_step>safe_step>red_flag>boundary",
+      75
+    ],
+    [
+      "must_ask>safe_step>red_flag>boundary",
+      75
+    ],
+    [
+      "boundary>safe_step>must_ask>red_flag>boundary",
+      60
+    ],
+    [
+      "must_not_say>safe_step>red_flag>boundary",
+      45
+    ],
+    [
+      "boundary>must_ask>safe_step>red_flag",
+      33
+    ],
+    [
+      "boundary>must_ask>safe_step>red_flag>boundary",
+      12
+    ]
+  ]
+}

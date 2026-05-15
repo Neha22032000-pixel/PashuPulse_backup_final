@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-05-10T16:46:49.872453+00:00",
+  "decision": "pending_review",
+  "notes": "Real SFT must use only this package after all review roles approve these exact hashes.",
+  "package_checksums": {
+    "package_sft_dev_sha256": "e21e2376827e149ac78432ea511a2f42492914e2f0c0e3f4b3da4acdf9e29802",
+    "package_sft_train_sha256": "ed5591b0f0218ffd727d8d5489f710cdb9ee4a69002c4ad8e909aa361c48fa0f",
+    "source_sft_dev_sha256": "04bc1bcba1bf8a43ab24a3e46c8f79e6bfbe809cbfc9093b6888e5e221358a0d",
+    "source_sft_train_sha256": "7c8be710a8096b51496d12061695c06b92b41f6dd0ca6bc551610dd5400ad930",
+    "training_config_sha256": "9a57bca66eae9849c6ca6b35482cab1a016afe1cbf7c111cd27a36b7bf1372b1"
+  },
+  "report_hashes": {
+    "cleaning_report_sha256": "5e2e667665183799f71ead8623843d86198a6772848da77bafe32e0c4b93730d",
+    "diversity_cleanup_report_sha256": "47eb0f15ec56e0ce7cd78e7dd57e0ffb157d8a8c37e5d2dbf95218cbf9a434de",
+    "language_quality_report_sha256": "547375606e3c8c3e6bd618cbbfdf6ee51683f547fbb2d29acfae6693914c5538",
+    "safety_preservation_report_sha256": "0449c1667a6e9a6eaa0e42e6ce862626bd9c01ffa5877d2018c4b07ee33deb8a"
+  },
+  "required_decision": "approved_for_cleaned_sft_candidate",
+  "required_reviewer_roles": [
+    "language_naturalness",
+    "safety_source_preservation",
+    "data_gate_checksum"
+  ]
+}

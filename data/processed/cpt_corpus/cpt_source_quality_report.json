@@ -1,0 +1,29 @@
+{
+  "chunk_count": 21,
+  "country_counts": {
+    "India": 11,
+    "International": 8,
+    "United States": 2,
+    "Unknown": 2
+  },
+  "errors": [],
+  "estimated_tokens": 479,
+  "source_state_counts": {
+    "accept": 20,
+    "quarantine": 1,
+    "reject": 2
+  },
+  "source_tier_counts": {
+    "commercial": 1,
+    "international_extension": 5,
+    "international_standard": 1,
+    "official_extension_india": 8,
+    "official_india": 2,
+    "reputable_veterinary_reference": 1,
+    "secondary_context": 1,
+    "training_notes": 1,
+    "university_extension": 2,
+    "unsafe_blog": 1
+  },
+  "valid": true
+}

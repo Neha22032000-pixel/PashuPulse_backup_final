@@ -1,0 +1,28 @@
+{
+  "accepted_source_count": 60,
+  "artifact_hashes": {
+    "accepted_cpt_sources.jsonl": "2e58d83462a21cd121d825e68c1269b32b523f658b0fbc3544c0e4768f51b361",
+    "accepted_stripped_cpt_sources.jsonl": "1942250467de9ab20aa37bd21f9c32de7a516fdef633402626897108c0eaab9e",
+    "cpt_clean_chunks.jsonl": "4346bb25dd76d61973f704ad20b4b8a99b87f587eddbbe445bdf2f8d4f11b822",
+    "manifests/source_download_manifest.jsonl": "b4e61e6fa102650c6c61c8283443dd7f817679ef2c421b86a8299b7e20037b53",
+    "manifests/source_extraction_manifest.jsonl": "23857910ec43cbe534d22eebab480ef1c7a34facce48885184266f02ff7c2dff",
+    "manifests/source_quality_manifest.jsonl": "39f1c163bd4a5cecb90a438723acbffe6ffcc3701bfea946df2950167b31f82b",
+    "quarantined_cpt_sources.jsonl": "23166655742bf7705358604b2ad7a78d72579589f11b57b873ae2960fd339393",
+    "rejected_cpt_sources.jsonl": "7423f06c64da7a7316e12ca0a7bbf75a90433666edd70e44b67e215745dcd435",
+    "reports/source_coverage_report.json": "60c632b76bbc64383b3f1d2ec191e8fd73d200ed26fade4d3382a0a2195176fc",
+    "reports/source_safety_filter_report.json": "6650c293f68dc04a815cdde0df31725db7fc90ec9fbcd13f101137c36457c4cb"
+  },
+  "chunk_count": 3799,
+  "clean_tokens": 2543181,
+  "created_date": "2026-05-15",
+  "library_version": "offline-library-v1",
+  "notes": [
+    "Offline preservation library for later CPT/retrieval selection.",
+    "Not an approved SFT/RAG grounding set.",
+    "Final grounding subset requires a separate review pass."
+  ],
+  "rag_grounding_allowed": false,
+  "sft_allowed": false,
+  "source_count": 74,
+  "status": "OFFLINE_SOURCE_LIBRARY_CANDIDATE"
+}

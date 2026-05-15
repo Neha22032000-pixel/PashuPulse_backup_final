@@ -1,0 +1,15 @@
+{
+  "approved_for_real_sft": true,
+  "created_at_utc": "2026-05-10T15:16:08.237394+00:00",
+  "error_counts": {},
+  "hinglish_language_mirror": {
+    "avg": 0.9999,
+    "count": 850,
+    "max": 1.0,
+    "min": 0.9884
+  },
+  "repair_version": "hinglish-repair-v1",
+  "state_counts": {
+    "auto_approved": 1275
+  }
+}

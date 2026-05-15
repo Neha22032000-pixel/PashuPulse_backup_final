@@ -1,0 +1,24 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "seed_count": 300,
+  "row_counts": {
+    "sft_train": 1050,
+    "sft_dev": 225,
+    "final_eval": 225
+  },
+  "risk_counts": {
+    "green": 75,
+    "yellow": 153,
+    "red": 72
+  },
+  "language_counts": {
+    "hinglish": 200,
+    "english": 100
+  },
+  "approval_state": "BLOCKED_PENDING_EXPANSION_REVIEW",
+  "phase": "full_expansion_candidate",
+  "expansion_allowed": false,
+  "sft_allowed": false
+}

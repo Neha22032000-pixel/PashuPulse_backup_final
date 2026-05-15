@@ -1,0 +1,24 @@
+{
+  "id": "nehak76044/pashu-saathi-gemma-lora-sft",
+  "title": "Pashu Saathi Gemma LoRA SFT",
+  "code_file": "gemma_lora_sft.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nehak76044/pashu-saathi-sft-cleaned-candidate",
+    "nehak76044/pashupulse-sft-checkpoint-adapters"
+  ],
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1"
+  ],
+  "competition_sources": [],
+  "keywords": [
+    "gemma",
+    "pashu-saathi",
+    "lora",
+    "sft"
+  ]
+}

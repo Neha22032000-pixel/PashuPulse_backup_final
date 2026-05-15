@@ -1,0 +1,6 @@
+{
+  "status": "FULL_EXPANSION_REVIEW_ONLY",
+  "reason": "1.5K expansion candidate is blocked from SFT export and 2K scale-up until external approvals pass.",
+  "required_next_state": "APPROVED_FOR_SFT",
+  "recommended_next_step": "review full expansion reports and obtain source/safety/language/eval approvals"
+}

@@ -1,0 +1,19 @@
+{
+  "blocker_count": 0,
+  "recurring_families": [],
+  "review_decision": "approved_for_pilot_eval_only",
+  "sft_allowed": false,
+  "status": "approved_for_pilot_eval_only",
+  "valid_statuses": [
+    "approved_for_pilot_eval_only",
+    "blocked_by_eval_contract_invalid",
+    "blocked_by_eval_failures",
+    "blocked_by_eval_runtime_unavailable",
+    "blocked_by_recurring_safety_regression",
+    "blocked_by_source_or_safety_regression",
+    "blocked_by_source_scope",
+    "ready_for_sft_planning",
+    "repair_required"
+  ],
+  "validation_valid": true
+}

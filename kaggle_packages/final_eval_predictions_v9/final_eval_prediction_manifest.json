@@ -1,0 +1,36 @@
+{
+  "EVAL_ONLY_DO_NOT_TRAIN": true,
+  "base_model_path": "/kaggle/input/models/google/gemma-4/transformers/gemma-4-e2b-it/1",
+  "checksums": {
+    "base_gemma_predictions_sha256": "41f4f6a5a40dba9566a25761ae114b33aeead62f7a2ba4fd862dc57daa454fe3",
+    "checkpoint_250_predictions_sha256": "ff0e5b644f01c1d04fe685c1357404818386a17654ef200a9b418f0753283bc5",
+    "checkpoint_264_predictions_sha256": "54c335076791f3f070187739472a350b600d05ef7bdcecf289cf0e6353a6cb15",
+    "eval_rubric_sha256": "2ac3acd12eaf3f1519b59a9a7678d9563494009e0439064715a7a904a8a89ce9",
+    "final_eval_sha256": "7eb85075af1dec3c09f5096d623ee0673daab66570eaa07a2f7d3671cf7b9272"
+  },
+  "created_at_utc": "2026-05-11T08:23:25.414198+00:00",
+  "elapsed_sec": 2770.55,
+  "generated_files": {
+    "base_gemma": "/kaggle/working/pashu_final_eval_judge/final_eval_predictions_base_gemma.jsonl",
+    "checkpoint_250": "/kaggle/working/pashu_final_eval_judge/final_eval_predictions_checkpoint_250.jsonl",
+    "checkpoint_264": "/kaggle/working/pashu_final_eval_judge/final_eval_predictions_checkpoint_264.jsonl"
+  },
+  "row_count": 25,
+  "schema_version": "pashu-pulse-final-eval-local-judge-v1",
+  "seal_report": {
+    "leak_count": 0,
+    "leaks": {
+      "dev_row_overlap": [],
+      "dev_seed_overlap": [],
+      "train_row_overlap": [],
+      "train_seed_overlap": []
+    },
+    "sealed": true
+  },
+  "stage": "prediction_generation",
+  "systems": [
+    "base_gemma",
+    "checkpoint_250",
+    "checkpoint_264"
+  ]
+}

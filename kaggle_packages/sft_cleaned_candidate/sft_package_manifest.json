@@ -1,0 +1,30 @@
+{
+  "blocked_previous_packages": [
+    "sft_full_package",
+    "sft_repaired_candidate"
+  ],
+  "checksums": {
+    "package_sft_dev_sha256": "e21e2376827e149ac78432ea511a2f42492914e2f0c0e3f4b3da4acdf9e29802",
+    "package_sft_train_sha256": "ed5591b0f0218ffd727d8d5489f710cdb9ee4a69002c4ad8e909aa361c48fa0f",
+    "source_sft_dev_sha256": "04bc1bcba1bf8a43ab24a3e46c8f79e6bfbe809cbfc9093b6888e5e221358a0d",
+    "source_sft_train_sha256": "7c8be710a8096b51496d12061695c06b92b41f6dd0ca6bc551610dd5400ad930",
+    "training_config_sha256": "9a57bca66eae9849c6ca6b35482cab1a016afe1cbf7c111cd27a36b7bf1372b1"
+  },
+  "created_at_utc": "2026-05-10T16:46:49.439675+00:00",
+  "package_mode": "cleaned_candidate",
+  "package_type": "sft_training",
+  "promotion_allowed": false,
+  "requires_reviews": [
+    "language_naturalness",
+    "safety_source_preservation",
+    "data_gate_checksum"
+  ],
+  "row_counts": {
+    "final_eval": 0,
+    "sft_dev": 225,
+    "sft_train": 1050
+  },
+  "sft_allowed": false,
+  "source_package_dir": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\kaggle_packages\\sft_full_package",
+  "status": "BLOCKED_PENDING_CLEAN_DATA_REVIEW"
+}

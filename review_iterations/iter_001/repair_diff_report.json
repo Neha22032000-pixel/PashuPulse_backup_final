@@ -1,0 +1,47 @@
+{
+  "changed_checksums": {
+    "artifact_bundle_sha256": {
+      "current": "116f37b83805f3b18e7ac5a88880cf19561bfe5739f2c9bf6dbbd90fe1aeb344",
+      "previous": null
+    },
+    "final_eval_sha256": {
+      "current": "bfad319f6135e6f8ec44856a6eee7b2b21c102fe4ef65da944699c57cc1634c7",
+      "previous": null
+    },
+    "report_schema_version": {
+      "current": "expansion-review-v1",
+      "previous": null
+    },
+    "review_queue_sha256": {
+      "current": "7463fe0fce4a3893f44b1cc65db0f4a1a1253947f8a4a4124206d9fb13f7107e",
+      "previous": null
+    },
+    "seed_cases_sha256": {
+      "current": "830a48a136922892296c68ca59c1d4f0d017f73ac3e73174278bd32ed15b544f",
+      "previous": null
+    },
+    "sft_dev_sha256": {
+      "current": "5b12803acf437ba1537b40a54b6e86ca5127c3dc9e7d8a6ea73e439906202aba",
+      "previous": null
+    },
+    "sft_train_sha256": {
+      "current": "2d7b80b65bc3500b14ab125a95ac1de0ad75e6c17ec71fef6859d036e941468a",
+      "previous": null
+    },
+    "source_claims_sha256": {
+      "current": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+      "previous": null
+    },
+    "validator_config_sha256": {
+      "current": "148b3a24b8ce546b4b15607ec123bbb20d665f67f94efb0be03c0ece8fa11ea5",
+      "previous": null
+    }
+  },
+  "expected_change_policy": {
+    "final_eval_sha256": "expected to change after regeneration when generator output changes",
+    "seed_cases_sha256": "may change only when seed/generator contract repair changes seeds",
+    "sft_dev_sha256": "expected to change after regeneration when generator output changes",
+    "sft_train_sha256": "expected to change after regeneration when generator output changes",
+    "source_claims_sha256": "must remain unchanged unless source repair declared"
+  }
+}

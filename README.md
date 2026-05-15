@@ -60,6 +60,71 @@ would teach bad priors: miracle cures, unsafe folk remedies, raw drug doses,
 injection routes, procedure walkthroughs, anti-vaccine claims, product spam, and
 bad OCR. Quarantined CPT chunks are not allowed as SFT/RAG factual grounding.
 
+## CPT/DAPT Research Artifacts
+
+The CPT/DAPT research pass is separate from training. It asks whether continued
+pretraining is worth attempting for livestock knowledge grounding before any
+parameter or Kaggle launch discussion:
+
+```powershell
+python pashu_saathi/scripts/build_cpt_research_artifacts.py --out-dir pashu_saathi/data/processed/cpt_research --library-dir pashu_saathi/data/sources/offline_library_v1
+```
+
+Generated artifacts include source-family train/dev/test splits, a corpus audit,
+an eval-only source-derived question bank, an experiment matrix, and a go/no-go
+decision template. These artifacts explicitly keep `training_allowed` and
+`sft_allowed` false.
+
+Research docs:
+
+- `docs/cpt_dapt_research_brief.md`
+- `docs/cpt_eval_design.md`
+
+## Offline Source Library
+
+The broader offline source acquisition workflow downloads raw sources, extracts
+text, builds cleaned chunks, and records coverage/safety manifests for a later
+grounding-selection pass:
+
+```powershell
+python pashu_saathi/scripts/build_offline_source_library.py --out-dir pashu_saathi/data/sources/offline_library_v1
+```
+
+This library is coverage-first. It preserves English and Hindi/Hinglish-relevant
+sources for cow, buffalo, ox/bullock, and calf topics, but it is not directly
+approved for SFT or farmer-facing retrieval until a separate grounding review
+chooses the safe subset.
+
+Current library snapshot:
+
+- `74` cataloged source records
+- `60` accepted or accepted-after-stripping sources
+- `64` raw downloaded files preserved offline
+- `3,799` clean chunks
+- about `2.54M` clean tokens
+- coverage gate passes for cow, buffalo, calf, ox/bullock, feeding, water,
+  shed hygiene, milk hygiene, heat/cold stress, calf care, pregnancy/calving,
+  bloat, wounds, diarrhea, FMD-like signs, poisoning/spoiled feed, parasites,
+  bites, and working ox care
+
+The raw, extracted, and cleaned source files are stored with Git LFS because the
+offline corpus is large. After cloning, run:
+
+```powershell
+git lfs pull
+```
+
+Useful teammate starting points:
+
+- `data/sources/offline_library_v1/manifests/source_download_manifest.jsonl`
+- `data/sources/offline_library_v1/manifests/source_quality_manifest.jsonl`
+- `data/sources/offline_library_v1/reports/source_coverage_report.json`
+- `data/sources/offline_library_v1/reports/source_safety_filter_report.json`
+- `data/sources/offline_library_v1/cpt_clean_chunks.jsonl`
+
+The next pass should select a smaller strict grounding subset from the accepted
+sources. Do not treat the broad CPT/offline library as final answer authority.
+
 ## Safety Boundaries
 
 Hard bans include confident diagnosis, pills, injections, dosages, antibiotics,

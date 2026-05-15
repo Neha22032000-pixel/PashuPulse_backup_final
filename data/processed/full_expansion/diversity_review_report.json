@@ -1,0 +1,159 @@
+{
+  "checksums": {
+    "artifact_bundle_sha256": "116f37b83805f3b18e7ac5a88880cf19561bfe5739f2c9bf6dbbd90fe1aeb344",
+    "final_eval_sha256": "bfad319f6135e6f8ec44856a6eee7b2b21c102fe4ef65da944699c57cc1634c7",
+    "report_schema_version": "expansion-review-v1",
+    "review_queue_sha256": "7463fe0fce4a3893f44b1cc65db0f4a1a1253947f8a4a4124206d9fb13f7107e",
+    "seed_cases_sha256": "830a48a136922892296c68ca59c1d4f0d017f73ac3e73174278bd32ed15b544f",
+    "sft_dev_sha256": "5b12803acf437ba1537b40a54b6e86ca5127c3dc9e7d8a6ea73e439906202aba",
+    "sft_train_sha256": "2d7b80b65bc3500b14ab125a95ac1de0ad75e6c17ec71fef6859d036e941468a",
+    "source_claims_sha256": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+    "validator_config_sha256": "148b3a24b8ce546b4b15607ec123bbb20d665f67f94efb0be03c0ece8fa11ea5"
+  },
+  "created_at_utc": "2026-05-09T11:18:42.751564+00:00",
+  "errors": [],
+  "failures": [],
+  "normalization": "lowercase, animal/seed placeholders, whitespace collapsed; char 5-gram Jaccard threshold 0.96",
+  "observed_rates": {
+    "top_prompt_share": 0.0006666666666666666,
+    "top_response_share": 0.002
+  },
+  "pass": true,
+  "report_schema_version": "expansion-review-v1",
+  "reviewed_rows": 1500,
+  "reviewer_id": "readiness-final",
+  "reviewer_name": "Readiness Final",
+  "thresholds": {
+    "dominant_prompt_max": 0.12,
+    "dominant_response_max": 0.08,
+    "near_duplicate_cross_split_max": 0
+  },
+  "tool_id": "pashu_saathi_deterministic_review",
+  "top_prompts": [
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai. chhota field note jaisa jawab do.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai. pehle sabse zaroori check poochho.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai. aaj ke liye offline checklist do.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai. ghar ke helper ko samajh aaye aisa batao.",
+      1
+    ],
+    [
+      "{animal} ke liye roz ka paani, shed aur chara routine simple batao. mudda dry shed floor hai. kya karna hai aur kya nahi karna, review card do.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor. please answer like a short field note.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor. first ask the most important checks.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor. give an offline checklist i can follow today.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor. explain it so a family helper can use it safely.",
+      1
+    ],
+    [
+      "we have poor internet in the village. how should i manage daily care for my {animal}? the concern is dry shed floor. make it a review card with what to do and what not to do.",
+      1
+    ]
+  ],
+  "top_responses": [
+    [
+      "for this unsafe shortcut pressure case 071, use only the safer supportive alternative. for this unsafe shortcut pressure case 071, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. for this unsafe shortcut pressure case 071, do not use medicines, injections, doses, cutting, or force. close note for this unsafe shortcut pressure case 071: repeat the simple checks later and keep the animal comfortable.",
+      3
+    ],
+    [
+      "do not turn this into treatment advice for this unsafe shortcut pressure case 071; stay with observation, rest, hygiene, water, and red flags. for this unsafe shortcut pressure case 071, use only the safer supportive alternative. for this unsafe shortcut pressure case 071, keep notes on signs, timing, feed, water, breathing, standing, and whether help is reachable. for this unsafe shortcut pressure case 071, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. close note for this unsafe shortcut pressure case 071: keep this offline checklist with the family.",
+      3
+    ],
+    [
+      "for this unsafe shortcut pressure case 071, do not follow the shortcut: give mustard oil or drench. use the safer alternative: refuse the shortcut and give low-risk supportive steps plus red-flag escalation. for this unsafe shortcut pressure case 071, ask what signs are present, when they started, and what shortcut the farmer is being pressured to try. for this unsafe shortcut pressure case 071, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. contact a vet, animal health worker, pashu sakhi, or dairy cooperative with these notes if the situation worsens. close note for this unsafe shortcut pressure case 071: share only these observations with helpers.",
+      3
+    ],
+    [
+      "this answer must stay supportive for this unsafe shortcut pressure case 071: no diagnosis, no drug names, no dose, no route, and no invasive step. for this unsafe shortcut pressure case 071, use only the safer supportive alternative. for this unsafe shortcut pressure case 071, ask what signs are present, when they started, and what shortcut the farmer is being pressured to try. for this unsafe shortcut pressure case 071, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. close note for this unsafe shortcut pressure case 071: stop if anything starts looking unsafe.",
+      3
+    ],
+    [
+      "for this unsafe shortcut pressure case 074, use only the safer supportive alternative. for this unsafe shortcut pressure case 074, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. for this unsafe shortcut pressure case 074, do not use medicines, injections, doses, cutting, or force. close note for this unsafe shortcut pressure case 074: repeat the simple checks later and keep the animal comfortable.",
+      3
+    ],
+    [
+      "do not turn this into treatment advice for this unsafe shortcut pressure case 074; stay with observation, rest, hygiene, water, and red flags. for this unsafe shortcut pressure case 074, use only the safer supportive alternative. for this unsafe shortcut pressure case 074, keep notes on signs, timing, feed, water, breathing, standing, and whether help is reachable. for this unsafe shortcut pressure case 074, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. close note for this unsafe shortcut pressure case 074: keep this offline checklist with the family.",
+      3
+    ],
+    [
+      "for this unsafe shortcut pressure case 074, do not follow the shortcut: give random antibiotics. use the safer alternative: refuse the shortcut and give low-risk supportive steps plus red-flag escalation. for this unsafe shortcut pressure case 074, ask what signs are present, when they started, and what shortcut the farmer is being pressured to try. for this unsafe shortcut pressure case 074, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. contact a vet, animal health worker, pashu sakhi, or dairy cooperative with these notes if the situation worsens. close note for this unsafe shortcut pressure case 074: share only these observations with helpers.",
+      3
+    ],
+    [
+      "this answer must stay supportive for this unsafe shortcut pressure case 074: no diagnosis, no drug names, no dose, no route, and no invasive step. for this unsafe shortcut pressure case 074, use only the safer supportive alternative. for this unsafe shortcut pressure case 074, ask what signs are present, when they started, and what shortcut the farmer is being pressured to try. for this unsafe shortcut pressure case 074, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. close note for this unsafe shortcut pressure case 074: stop if anything starts looking unsafe.",
+      3
+    ],
+    [
+      "for this unsafe shortcut pressure case 075, use only the safer supportive alternative. for this unsafe shortcut pressure case 075, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. for this unsafe shortcut pressure case 075, do not use medicines, injections, doses, cutting, or force. close note for this unsafe shortcut pressure case 075: repeat the simple checks later and keep the animal comfortable.",
+      3
+    ],
+    [
+      "do not turn this into treatment advice for this unsafe shortcut pressure case 075; stay with observation, rest, hygiene, water, and red flags. for this unsafe shortcut pressure case 075, use only the safer supportive alternative. for this unsafe shortcut pressure case 075, keep notes on signs, timing, feed, water, breathing, standing, and whether help is reachable. for this unsafe shortcut pressure case 075, escalate if red flags appear, signs worsen, or the animal cannot stand or breathe normally. close note for this unsafe shortcut pressure case 075: keep this offline checklist with the family.",
+      3
+    ]
+  ],
+  "top_structures": [
+    [
+      "safe_step>red_flag>boundary>style",
+      228
+    ],
+    [
+      "boundary>safe_step>safe_step>red_flag>style",
+      228
+    ],
+    [
+      "boundary>safe_step>must_ask>red_flag>style",
+      228
+    ],
+    [
+      "must_ask>safe_step>boundary>red_flag>style",
+      183
+    ],
+    [
+      "must_ask>must_ask>safe_step>red_flag>boundary>style",
+      154
+    ],
+    [
+      "must_ask>must_ask>safe_step>red_flag>boundary>boundary>style",
+      146
+    ],
+    [
+      "safe_step>red_flag>boundary>boundary>style",
+      72
+    ],
+    [
+      "boundary>safe_step>safe_step>red_flag>boundary>style",
+      72
+    ],
+    [
+      "must_ask>safe_step>boundary>red_flag>boundary>style",
+      72
+    ],
+    [
+      "boundary>safe_step>must_ask>red_flag>boundary>style",
+      72
+    ]
+  ],
+  "warnings": []
+}

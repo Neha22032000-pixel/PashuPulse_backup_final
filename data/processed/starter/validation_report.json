@@ -1,0 +1,24 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "seed_count": 300,
+  "row_counts": {
+    "sft_train": 0,
+    "sft_dev": 0,
+    "final_eval": 0
+  },
+  "risk_counts": {
+    "green": 75,
+    "yellow": 153,
+    "red": 72
+  },
+  "language_counts": {
+    "hinglish": 200,
+    "english": 100
+  },
+  "approval_state": "BLOCKED_PENDING_SEED_APPROVAL",
+  "phase": "seed_bank",
+  "expansion_allowed": false,
+  "sft_allowed": false
+}

@@ -1,0 +1,87 @@
+{
+  "errors": [],
+  "warnings": [],
+  "checked": [
+    {
+      "seed_id": "ps_v4_001_1_clean_water_trough",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_001_2_clean_water_trough",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_001_3_clean_water_trough",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_002_1_summer_water_breaks",
+      "topic": "ox"
+    },
+    {
+      "seed_id": "ps_v4_002_2_summer_water_breaks",
+      "topic": "ox"
+    },
+    {
+      "seed_id": "ps_v4_002_3_summer_water_breaks",
+      "topic": "ox"
+    },
+    {
+      "seed_id": "ps_v4_003_1_shed_floor_dry",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_003_2_shed_floor_dry",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_003_3_shed_floor_dry",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_004_1_monsoon_ventilation",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_004_2_monsoon_ventilation",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_004_3_monsoon_ventilation",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_005_1_fodder_dry_storage",
+      "topic": "feed_poison"
+    },
+    {
+      "seed_id": "ps_v4_005_2_fodder_dry_storage",
+      "topic": "feed_poison"
+    },
+    {
+      "seed_id": "ps_v4_005_3_fodder_dry_storage",
+      "topic": "feed_poison"
+    },
+    {
+      "seed_id": "ps_v4_006_1_gradual_feed_change",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_006_2_gradual_feed_change",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_006_3_gradual_feed_change",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_007_1_mineral_salt_awareness",
+      "topic": "routine"
+    },
+    {
+      "seed_id": "ps_v4_007_2_mineral_salt_awareness",
+      "topic": "routine"
+    }
+  ],
+  "checked_count": 300
+}

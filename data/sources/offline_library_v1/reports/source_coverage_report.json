@@ -1,0 +1,71 @@
+{
+  "accepted_source_count": 60,
+  "chunk_count": 3799,
+  "clean_tokens": 2543181,
+  "country_counts": {
+    "India": 26,
+    "International": 21,
+    "United States": 13
+  },
+  "coverage_goal": "coverage-first offline library; token count is secondary",
+  "language_counts": {
+    "en": 54,
+    "hi": 6
+  },
+  "max_source_family_token_share": 0.5251,
+  "missing_species": [],
+  "missing_topics": [],
+  "species_counts": {
+    "buffalo": 40,
+    "calf": 23,
+    "cow": 53,
+    "ox/bullock": 4
+  },
+  "tier_counts": {
+    "academic_extension": 3,
+    "international_extension": 13,
+    "international_standard": 2,
+    "official_extension_india": 21,
+    "official_india": 2,
+    "reputable_veterinary_reference": 6,
+    "university_extension": 13
+  },
+  "topic_counts": {
+    "FMD-like signs": 3,
+    "animal health": 8,
+    "bites": 2,
+    "bloat": 5,
+    "breeding": 1,
+    "brucellosis": 1,
+    "buffalo": 3,
+    "calf care": 5,
+    "dairy husbandry": 1,
+    "diarrhea": 3,
+    "disease control": 1,
+    "escalation": 1,
+    "extension": 2,
+    "farm operations": 6,
+    "feeding": 21,
+    "health": 1,
+    "heat/cold stress": 12,
+    "housing": 5,
+    "hygiene": 1,
+    "mastitis": 2,
+    "milk hygiene": 9,
+    "milk production": 1,
+    "movement control": 1,
+    "nutrition": 5,
+    "parasites": 3,
+    "poisoning/spoiled feed": 1,
+    "pregnancy/calving": 5,
+    "reproduction": 2,
+    "shed hygiene": 4,
+    "smallholder": 1,
+    "water": 7,
+    "welfare": 8,
+    "working ox care": 3,
+    "wounds": 3
+  },
+  "total_source_count": 74,
+  "valid": true
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_hashes": {
+    "accepted_cpt_sources.jsonl": "d54ac3fc1f344bed4bf9ccd84efd3a7a964d1198a804dbfa6e90a85e991ed9cf",
+    "candidate_cpt_sources.jsonl": "3b78f0c77a869d8621a7120d6081edaf8e8e63646fd928aebe4b31769176cd39",
+    "cpt_clean_chunks.jsonl": "7cbf6c9921ca19793afeb62cf784b9414b7c8d79ea88df06270d52ef9b7ac27c",
+    "cpt_safety_filter_report.json": "9f2e431a50b8b62bba48e90ab768fda8ca675a9f9815f4f58f5d8a90a0cd0003",
+    "cpt_source_quality_report.json": "a92b7deecdf46776c423f93a7cf19a7c80da6769fa9c01e2f3464d8b38c3de01",
+    "quarantined_cpt_sources.jsonl": "df518e7048e07c1a8dfaa94cd06fd46da5a70033ea39b6ce45b365c1589ad76a",
+    "rejected_cpt_sources.jsonl": "e7165ea8b05e9093a4dab0d1b149f390f27bc065b1ce37141b7e64038aa7db77"
+  },
+  "chunk_count": 21,
+  "corpus_version": "cpt-corpus-v1",
+  "created_date": "2026-05-15",
+  "estimated_tokens": 479,
+  "notes": [
+    "Broad CPT corpus candidate; not a factual SFT/RAG source registry.",
+    "Quarantined chunks may be used for CPT only after risky spans are stripped.",
+    "Safety-critical farmer advice must continue to use stricter SFT/RAG grounding."
+  ],
+  "rag_grounding_allowed": false,
+  "sft_allowed": false,
+  "source_count": 23,
+  "source_state_counts": {
+    "accept": 20,
+    "quarantine": 1,
+    "reject": 2
+  },
+  "status": "CPT_CORPUS_CANDIDATE"
+}

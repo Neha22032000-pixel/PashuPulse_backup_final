@@ -1,0 +1,34 @@
+{
+  "EVAL_ONLY_DO_NOT_TRAIN": true,
+  "backend": {
+    "available": true,
+    "backend": "external_reportable_predictions",
+    "blocker": "",
+    "predictions_file": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\kaggle_outputs\\eval_latest_t4\\pashu_saathi_eval\\baseline_predictions.jsonl"
+  },
+  "backend_result": {
+    "predictions_file": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\kaggle_outputs\\eval_latest_t4\\pashu_saathi_eval\\baseline_predictions.jsonl",
+    "ran": true,
+    "reportable": true,
+    "source": "external_reportable_predictions"
+  },
+  "checksums": {
+    "eval_prompts_sha256": "cb7c1b3a644217d86d353906eca3ecfbac7f0dd4fa762f5a2035960bbc565e68",
+    "eval_rubric_sha256": "2ac3acd12eaf3f1519b59a9a7678d9563494009e0439064715a7a904a8a89ce9",
+    "final_eval_sha256": "7eb85075af1dec3c09f5096d623ee0673daab66570eaa07a2f7d3671cf7b9272",
+    "scorer_config_sha256": "0d5baa3a016fd14ed1f7ec0500f89dbbda92bc7a011f0d386f4a641c1008deb1",
+    "seed_cases_sha256": "514ff5510060a4d47f23dbc7ba19315fabb3742c9c05826788312dcd1df940ad",
+    "source_claims_sha256": "ef90b88478d8a2bc67b91571f9d01c19185a45c8b9756fc56471c0e746967fda"
+  },
+  "created_at_utc": "2026-05-10T12:57:03.307471+00:00",
+  "generation_params": {
+    "max_new_tokens": "384",
+    "temperature": "0.0"
+  },
+  "model_identifiers": {
+    "base_gemma": "",
+    "prompt_only_baseline": ""
+  },
+  "prompt_template_sha256": "bf87d1ebbaa84e3ab6c0cf0582af1b58d9fa4236a2756c3dd517705ac64f5417",
+  "reportable": true
+}

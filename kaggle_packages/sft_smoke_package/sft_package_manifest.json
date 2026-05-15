@@ -1,0 +1,90 @@
+{
+  "adversarial_included": false,
+  "checksums": {
+    "package_sft_dev_sha256": "9cde6561a7722679ba7e1f139bd97d7a9fb644940f88d0ed253daa00202cf1d3",
+    "package_sft_train_sha256": "a1a14d458f8acdaf27ab6da88a053f0768bf90d739330b8eee73f4e6f3ad284e",
+    "source_sft_dev_sha256": "0ad0210a3782986ae51f83b993f0778f1ad5897daad5419eaa6519d50d2a9c9f",
+    "source_sft_train_sha256": "1a111af60bd3323fec2b488bae56f0b4452e456f2c1f769eb1e89148a79369a8",
+    "training_config_sha256": "1ab3918c301ed2b99d94d42ef9a70e2b26d7c2f879107439908ce7201c41fd01"
+  },
+  "created_at_utc": "2026-05-10T12:57:38.717627+00:00",
+  "expansion_review_decision": {
+    "approval_state_change_allowed": false,
+    "blocking_failure_count": 0,
+    "blocking_findings": [],
+    "checksums": {
+      "artifact_bundle_sha256": "116f37b83805f3b18e7ac5a88880cf19561bfe5739f2c9bf6dbbd90fe1aeb344",
+      "final_eval_sha256": "bfad319f6135e6f8ec44856a6eee7b2b21c102fe4ef65da944699c57cc1634c7",
+      "report_schema_version": "expansion-review-v1",
+      "review_queue_sha256": "7463fe0fce4a3893f44b1cc65db0f4a1a1253947f8a4a4124206d9fb13f7107e",
+      "seed_cases_sha256": "830a48a136922892296c68ca59c1d4f0d017f73ac3e73174278bd32ed15b544f",
+      "sft_dev_sha256": "5b12803acf437ba1537b40a54b6e86ca5127c3dc9e7d8a6ea73e439906202aba",
+      "sft_train_sha256": "2d7b80b65bc3500b14ab125a95ac1de0ad75e6c17ec71fef6859d036e941468a",
+      "source_claims_sha256": "eb5b0e18e0bd5139e5e4957b102ef6dd0b4ce32e6bf93aa9ca8f75691c04b7df",
+      "validator_config_sha256": "148b3a24b8ce546b4b15607ec123bbb20d665f67f94efb0be03c0ece8fa11ea5"
+    },
+    "created_at_utc": "2026-05-09T11:18:45.079676+00:00",
+    "decision": "approved_for_pilot_eval_only",
+    "metadata_errors": [],
+    "repair_recommendations": [],
+    "report_schema_version": "expansion-review-v1",
+    "review_scope": "pilot_eval_packaging_only",
+    "reviewer_id": "readiness-final",
+    "reviewer_independence": "reviewer must be independent of row generation for positive decision",
+    "reviewer_name": "Readiness Final",
+    "sft_allowed": false,
+    "unresolved_issue_counts": {},
+    "valid_decisions": [
+      "approved_for_pilot_eval_only",
+      "repair_required"
+    ]
+  },
+  "final_eval_included": false,
+  "full_sft_launch_blocked_until_param_review": false,
+  "package_mode": "smoke",
+  "package_type": "sft_training",
+  "readiness_decision": {
+    "EVAL_ONLY_DO_NOT_TRAIN": true,
+    "backend": {
+      "available": true,
+      "backend": "external_reportable_predictions",
+      "blocker": "",
+      "predictions_file": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\kaggle_outputs\\eval_latest_t4\\pashu_saathi_eval\\baseline_predictions.jsonl"
+    },
+    "backend_result": {
+      "predictions_file": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\kaggle_outputs\\eval_latest_t4\\pashu_saathi_eval\\baseline_predictions.jsonl",
+      "ran": true,
+      "reportable": true,
+      "source": "external_reportable_predictions"
+    },
+    "baseline_score_pass": true,
+    "checksums": {
+      "eval_prompts_sha256": "cb7c1b3a644217d86d353906eca3ecfbac7f0dd4fa762f5a2035960bbc565e68",
+      "eval_rubric_sha256": "2ac3acd12eaf3f1519b59a9a7678d9563494009e0439064715a7a904a8a89ce9",
+      "final_eval_sha256": "7eb85075af1dec3c09f5096d623ee0673daab66570eaa07a2f7d3671cf7b9272",
+      "scorer_config_sha256": "0d5baa3a016fd14ed1f7ec0500f89dbbda92bc7a011f0d386f4a641c1008deb1",
+      "seed_cases_sha256": "514ff5510060a4d47f23dbc7ba19315fabb3742c9c05826788312dcd1df940ad",
+      "source_claims_sha256": "ef90b88478d8a2bc67b91571f9d01c19185a45c8b9756fc56471c0e746967fda"
+    },
+    "contamination_guard_pass": true,
+    "created_at_utc": "2026-05-10T12:57:03.788742+00:00",
+    "decision": "ready_for_sft_planning",
+    "rubric_pass": true,
+    "sft_allowed": false,
+    "valid_decisions": [
+      "ready_for_sft_planning",
+      "blocked_by_eval_runtime_unavailable",
+      "blocked_by_eval_contract_invalid",
+      "blocked_by_eval_failures",
+      "blocked_by_source_or_safety_regression"
+    ]
+  },
+  "row_counts": {
+    "final_eval": 0,
+    "sft_dev": 8,
+    "sft_train": 24
+  },
+  "sft_allowed": false,
+  "source_dataset_dir": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\data\\processed\\full_expansion",
+  "status": "SMOKE_ONLY_NOT_AUTHORITATIVE"
+}

@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "warnings": [],
+  "row_counts": {
+    "sft_train": 210,
+    "sft_dev": 45,
+    "final_eval": 45
+  },
+  "scale_ready": false,
+  "reason": "300-row pilot validates machinery only; 1K/2K requires a new frozen bundle."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED",
+  "reason": "Seed-bank v4 only. No expansion, SFT export, or eval rows are approved in this pass.",
+  "required_next_state": "APPROVED_FOR_EXPANSION",
+  "recommended_next_step": "obtain external seed-only approvals, then design a separate 300-row pilot expansion"
+}

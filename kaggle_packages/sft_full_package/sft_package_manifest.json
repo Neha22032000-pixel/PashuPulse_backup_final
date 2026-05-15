@@ -1,0 +1,38 @@
+{
+  "adversarial_included": false,
+  "checksums": {
+    "package_sft_dev_sha256": "04bc1bcba1bf8a43ab24a3e46c8f79e6bfbe809cbfc9093b6888e5e221358a0d",
+    "package_sft_train_sha256": "7c8be710a8096b51496d12061695c06b92b41f6dd0ca6bc551610dd5400ad930",
+    "source_sft_dev_sha256": "0ad0210a3782986ae51f83b993f0778f1ad5897daad5419eaa6519d50d2a9c9f",
+    "source_sft_train_sha256": "1a111af60bd3323fec2b488bae56f0b4452e456f2c1f769eb1e89148a79369a8",
+    "training_config_sha256": "9a57bca66eae9849c6ca6b35482cab1a016afe1cbf7c111cd27a36b7bf1372b1"
+  },
+  "created_at_utc": "2026-05-10T14:41:52.830009+00:00",
+  "expansion_review_summary": {
+    "blocking_failure_count": 0,
+    "decision": "approved_for_pilot_eval_only",
+    "reviewer_id": "readiness-final"
+  },
+  "final_eval_included": false,
+  "full_sft_launch_blocked_until_param_review": true,
+  "package_mode": "full",
+  "package_type": "sft_training",
+  "readiness_decision_summary": {
+    "baseline_score_pass": true,
+    "checksums": {
+      "seed_cases_sha256": "514ff5510060a4d47f23dbc7ba19315fabb3742c9c05826788312dcd1df940ad",
+      "source_claims_sha256": "ef90b88478d8a2bc67b91571f9d01c19185a45c8b9756fc56471c0e746967fda"
+    },
+    "contamination_guard_pass": true,
+    "decision": "ready_for_sft_planning",
+    "rubric_pass": true
+  },
+  "row_counts": {
+    "final_eval": 0,
+    "sft_dev": 225,
+    "sft_train": 1050
+  },
+  "sft_allowed": false,
+  "source_dataset_dir": "C:\\Users\\risha\\Documents\\New project 5\\pashu_saathi\\data\\processed\\full_expansion",
+  "status": "FULL_SFT_PACKAGE_GATED"
+}

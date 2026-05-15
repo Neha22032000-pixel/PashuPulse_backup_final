@@ -1,0 +1,43 @@
+{
+  "errors": [],
+  "hard_filter_policy": {
+    "allow": [
+      "broad husbandry",
+      "nutrition",
+      "housing",
+      "symptom descriptions",
+      "veterinarian-supervised medicine mentions"
+    ],
+    "quarantine_or_strip": [
+      "raw doses",
+      "injection routes",
+      "procedure steps",
+      "withdrawal tables",
+      "pesticide instructions"
+    ],
+    "reject": [
+      "miracle cures",
+      "unsafe folk remedies",
+      "anti-vaccine claims",
+      "commercial spam",
+      "bad OCR"
+    ]
+  },
+  "quarantined_reason_counts": {
+    "actionable_clinical_or_procedure_span": 1
+  },
+  "rejected_reason_counts": {
+    "hard_reject_pattern": 2
+  },
+  "risky_span_filter_events": [
+    {
+      "removed_span_count": 2,
+      "removed_spans": [
+        "Dose table: antibiotic 10 mg/kg intramuscular injection every 24 hours.",
+        "Withdrawal period varies by product."
+      ],
+      "source_id": "quarantine_dose_table_fixture"
+    }
+  ],
+  "valid": true
+}

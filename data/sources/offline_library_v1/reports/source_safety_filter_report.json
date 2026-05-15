@@ -1,0 +1,39 @@
+{
+  "policy": {
+    "accepted_keeps": [
+      "husbandry",
+      "nutrition",
+      "symptom descriptions",
+      "prevention",
+      "welfare",
+      "milk hygiene"
+    ],
+    "not_directly_allowed_for": [
+      "SFT factual grounding",
+      "automatic farmer-facing advice"
+    ],
+    "stripped_or_quarantined": [
+      "raw doses",
+      "injection routes",
+      "procedure walkthroughs",
+      "withdrawal tables",
+      "unsafe remedies"
+    ]
+  },
+  "risk_flag_counts": {
+    "download_failed": 10,
+    "hard_reject_pattern": 7,
+    "non_target_species": 9,
+    "possible_mojibake_or_ocr_noise": 6,
+    "procedure_or_dose_heavy": 1,
+    "risky_spans_stripped": 18,
+    "too_little_clean_text": 3
+  },
+  "status_counts": {
+    "accepted": 36,
+    "accepted_stripped": 24,
+    "download_failed": 10,
+    "quarantined": 4
+  },
+  "valid": true
+}

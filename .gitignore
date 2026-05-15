@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+test_runs/
+kaggle_outputs/
+outputs/
+exports/
+pytest-cache-files-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.egg-info/

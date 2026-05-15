@@ -1,0 +1,15 @@
+{
+  "id": "nehak76044/pashupulse-llm-judge-eval",
+  "title": "PashuPulse LLM Judge Eval",
+  "code_file": "llm_judge_eval.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nehak76044/pashu-saathi-eval-package"
+  ],
+  "competition_sources": [],
+  "keywords": []
+}
