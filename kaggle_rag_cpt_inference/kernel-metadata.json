@@ -1,0 +1,18 @@
+{
+  "code_file": "rag_cpt_inference.py",
+  "competition_sources": [],
+  "dataset_sources": [
+    "nehak76044/pashupulse-rag-runtime-package",
+    "nehak76044/pashupulse-cpt-continuation-best-adapter"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "id": "nehak76044/pashupulse-rag-cpt-inference",
+  "is_private": true,
+  "kernel_type": "script",
+  "language": "python",
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1"
+  ],
+  "title": "PashuPulse RAG CPT Inference"
+}

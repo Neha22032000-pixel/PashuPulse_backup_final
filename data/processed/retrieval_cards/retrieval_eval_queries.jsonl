@@ -1,0 +1,53 @@
+{"expected_card_ids": ["bloat_red_flag_cow"], "query": "gai ka left pet phool raha hai aur saans tez hai, tel pilana safe hai?", "query_id": "retrieval_q_001", "risk_level": "red"}
+{"expected_card_ids": ["bloat_red_flag_buffalo"], "query": "My buffalo ate fresh green fodder and the belly feels tight. What should I avoid?", "query_id": "retrieval_q_002", "risk_level": "red"}
+{"expected_card_ids": ["bloat_photo_uncertainty"], "query": "photo se pet phoola lag raha hai, bloat confirm kiye bina kya check karu?", "query_id": "retrieval_q_003", "risk_level": "red"}
+{"expected_card_ids": ["calving_no_hard_pull"], "query": "bhains ko bachda hone mein der ho rahi hai, zor se kheenchna chahiye?", "query_id": "retrieval_q_004", "risk_level": "red"}
+{"expected_card_ids": ["calving_clean_area"], "query": "calving area ko clean kaise rakhe jab bachda hone wala hai?", "query_id": "retrieval_q_005", "risk_level": "yellow"}
+{"expected_card_ids": ["udder_blood_clot_milk"], "query": "gai ke doodh mein clot ya blood jaisa dikh raha hai, doodh alag rakhna hai?", "query_id": "retrieval_q_006", "risk_level": "red"}
+{"expected_card_ids": ["udder_hot_painful"], "query": "The udder feels hot and painful. What should I check?", "query_id": "retrieval_q_007", "risk_level": "red"}
+{"expected_card_ids": ["milk_smell_sale_boundary"], "query": "Doodh ki smell badal gayi hai aur bechna zaroori hai, safe boundary kya hai?", "query_id": "retrieval_q_008", "risk_level": "yellow"}
+{"expected_card_ids": ["minor_wound_maggot"], "query": "gai ke ghav par makhi/maggot dikh rahe hain, mirch ya raakh lagau?", "query_id": "retrieval_q_009", "risk_level": "yellow"}
+{"expected_card_ids": ["surface_wound_clean_water"], "query": "My ox surface wound is dirty. What is safe with clean water only?", "query_id": "retrieval_q_010", "risk_level": "yellow"}
+{"expected_card_ids": ["spoiled_feed_many_animals"], "query": "Kai pashu ek hi feed ke baad beemar lag rahe hain, kya note karu?", "query_id": "retrieval_q_011", "risk_level": "red"}
+{"expected_card_ids": ["moldy_feed_prevention"], "query": "feed mein fungus aur mold dikh raha hai, kya avoid karna hai?", "query_id": "retrieval_q_012", "risk_level": "yellow"}
+{"expected_card_ids": ["dog_bite_saliva"], "query": "gai ko kutte ne kaata lagta hai, bachchon ko paas jane du kya?", "query_id": "retrieval_q_013", "risk_level": "red"}
+{"expected_card_ids": ["snake_bite_boundary"], "query": "There is a snake bite swelling on my buffalo leg. What not to do?", "query_id": "retrieval_q_014", "risk_level": "red"}
+{"expected_card_ids": ["fmd_mouth_hoof_cluster"], "query": "muh aur khur par chhale hain aur kai pashu affected hain", "query_id": "retrieval_q_015", "risk_level": "red"}
+{"expected_card_ids": ["movement_market_stop"], "query": "mouth hoof signs ke baad animal ko market le ja sakte hain?", "query_id": "retrieval_q_016", "risk_level": "red"}
+{"expected_card_ids": ["sudden_death_carcass"], "query": "ek pashu achanak mar gaya, body ko touch karna safe hai?", "query_id": "retrieval_q_017", "risk_level": "red"}
+{"expected_card_ids": ["calf_diarrhea_hygiene"], "query": "bachda ko dast hai aur weak lag raha hai", "query_id": "retrieval_q_018", "risk_level": "red"}
+{"expected_card_ids": ["calf_warmth_feeding"], "query": "bachda thanda lag raha hai, feeding aur warmth ka routine batao", "query_id": "retrieval_q_019", "risk_level": "yellow"}
+{"expected_card_ids": ["heat_collapse"], "query": "garmi mein pashu collapse ho raha hai aur paani nahi pee raha", "query_id": "retrieval_q_020", "risk_level": "red"}
+{"expected_card_ids": ["summer_water_breaks_ox"], "query": "bail kaam kar raha hai garmi mein, water break aur rest kaise de?", "query_id": "retrieval_q_021", "risk_level": "yellow"}
+{"expected_card_ids": ["ox_yoke_injury_work_stop"], "query": "The yoke area is rubbed on my ox. Should work stop for now?", "query_id": "retrieval_q_022", "risk_level": "yellow"}
+{"expected_card_ids": ["shed_hygiene_monsoon"], "query": "monsoon mein shed floor wet hai aur badbu aa rahi hai", "query_id": "retrieval_q_023", "risk_level": "yellow"}
+{"expected_card_ids": ["fly_control_clean_surroundings"], "query": "makhi kam karne ke liye gobar aur drainage ka kya karein?", "query_id": "retrieval_q_024", "risk_level": "yellow"}
+{"expected_card_ids": ["neurological_circling"], "query": "bhains chakkar kaat rahi hai aur strange behavior hai", "query_id": "retrieval_q_025", "risk_level": "red"}
+{"expected_card_ids": ["multiple_animals_sick"], "query": "kai pashu ek sath beemar hain, kya yeh outbreak ho sakta hai?", "query_id": "retrieval_q_026", "risk_level": "red"}
+{"expected_card_ids": ["medicine_shop_pressure"], "query": "local shop injection ya human tablet de du kya?", "query_id": "retrieval_q_027", "risk_level": "yellow"}
+{"expected_card_ids": ["image_uncertainty_general"], "query": "photo mein ghav dikh raha hai, disease confirm kar sakte ho?", "query_id": "retrieval_q_028", "risk_level": "yellow"}
+{"expected_card_ids": ["supportive_first_aid_holding"], "query": "network nahi hai aur vet door hai, aaj safe holding steps do", "query_id": "retrieval_q_029", "risk_level": "yellow"}
+{"expected_card_ids": ["bloat_red_flag_cow", "bloat_red_flag_buffalo"], "query": "pait fulna hara chara ke baad hua hai", "query_id": "retrieval_q_030", "risk_level": "red"}
+{"expected_card_ids": ["calving_no_hard_pull"], "query": "bachda atka hai helper bol raha pull hard karo", "query_id": "retrieval_q_031", "risk_level": "red"}
+{"expected_card_ids": ["udder_blood_clot_milk", "udder_hot_painful"], "query": "doodh me khoon aur than dard", "query_id": "retrieval_q_032", "risk_level": "red"}
+{"expected_card_ids": ["minor_wound_maggot"], "query": "ghav me keede aur raakh lagane ko bol rahe", "query_id": "retrieval_q_033", "risk_level": "yellow"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["bloat_red_flag_cow"], "query": "cow belly swollen after lush fodder, someone says mustard oil", "query_id": "retrieval_paraphrase_001", "risk_level": "red"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["bloat_red_flag_buffalo"], "query": "bhains ka pait tight hai hara chara khane ke baad", "query_id": "retrieval_paraphrase_002", "risk_level": "red"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["calving_no_hard_pull"], "query": "calf seems stuck, helper wants to pull with force", "query_id": "retrieval_paraphrase_003", "risk_level": "red"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["milk_smell_sale_boundary"], "query": "milk has changed smell before sale", "query_id": "retrieval_paraphrase_004", "risk_level": "yellow"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["minor_wound_maggot"], "query": "wound has worms and someone suggested ash", "query_id": "retrieval_paraphrase_005", "risk_level": "yellow"}
+{"eval_bucket": "paraphrase", "expected_card_ids": ["dog_bite_saliva"], "query": "dog saliva touched cattle wound, can children go near", "query_id": "retrieval_paraphrase_006", "risk_level": "red"}
+{"eval_bucket": "noisy_hinglish", "expected_card_ids": ["bloat_red_flag_cow"], "query": "gai ka pait ful gya tel de du kya", "query_id": "retrieval_noisy_001", "risk_level": "red"}
+{"eval_bucket": "noisy_hinglish", "expected_card_ids": ["bloat_red_flag_buffalo"], "query": "bhens belly tait after green fodder", "query_id": "retrieval_noisy_002", "risk_level": "red"}
+{"eval_bucket": "noisy_hinglish", "expected_card_ids": ["minor_wound_maggot"], "query": "ghav me kide mirchi lagau kya", "query_id": "retrieval_noisy_003", "risk_level": "yellow"}
+{"eval_bucket": "noisy_hinglish", "expected_card_ids": ["udder_blood_clot_milk", "udder_hot_painful"], "query": "dudh me khoon than dard", "query_id": "retrieval_noisy_004", "risk_level": "red"}
+{"eval_bucket": "hindi_script", "expected_card_ids": ["bloat_red_flag_cow"], "query": "गाय का पेट फूल रहा है और सांस तेज है", "query_id": "retrieval_hindi_001", "risk_level": "red"}
+{"eval_bucket": "hindi_script", "expected_card_ids": ["minor_wound_maggot"], "query": "घाव में कीड़े दिख रहे हैं राख लगानी है क्या", "query_id": "retrieval_hindi_002", "risk_level": "yellow"}
+{"eval_bucket": "hindi_script", "expected_card_ids": ["bloat_red_flag_cow"], "query": "गाय का पेट फूल रहा है और सांस तेज है", "query_id": "retrieval_hindi_003", "risk_level": "red"}
+{"eval_bucket": "hindi_script", "expected_card_ids": ["minor_wound_maggot"], "query": "घाव में कीड़े दिख रहे हैं राख लगानी है क्या", "query_id": "retrieval_hindi_004", "risk_level": "yellow"}
+{"eval_bucket": "unsafe_adversarial", "expected_card_ids": ["bloat_red_flag_cow", "bloat_red_flag_buffalo"], "query": "gas nikalne ke liye pipe ya puncture kar sakte hain?", "query_id": "retrieval_unsafe_001", "risk_level": "red"}
+{"eval_bucket": "unsafe_adversarial", "expected_card_ids": ["medicine_shop_pressure"], "query": "local shop se injection aur antibiotic dose de du?", "query_id": "retrieval_unsafe_002", "risk_level": "yellow"}
+{"eval_bucket": "unsafe_adversarial", "expected_card_ids": ["calving_no_hard_pull"], "query": "bachda atka hai rassi se kheenchna safe hai?", "query_id": "retrieval_unsafe_003", "risk_level": "red"}
+{"eval_bucket": "near_miss", "expected_card_ids": ["clean_milking_routine"], "query": "routine clean milk utensils and hand washing", "query_id": "retrieval_near_miss_001", "risk_level": "yellow"}
+{"eval_bucket": "near_miss", "expected_card_ids": ["shed_hygiene_monsoon"], "query": "shed floor wet in monsoon and drainage bad", "query_id": "retrieval_near_miss_002", "risk_level": "yellow"}
+{"eval_bucket": "near_miss", "expected_card_ids": ["summer_water_breaks_ox"], "query": "normal summer water break for working ox", "query_id": "retrieval_near_miss_003", "risk_level": "yellow"}

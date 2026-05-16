@@ -1,0 +1,144 @@
+{
+  "compound_unsafe_coverage_count": 0,
+  "errors": [],
+  "green_over_escalation_count": 2,
+  "irrelevant_safety_rate": 0.0,
+  "max_rendered_context_lines": 12,
+  "policy_spam_rate": 0.0,
+  "query_count": 53,
+  "red_under_escalation_count": 0,
+  "sample_cases": [
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "bloat_distress",
+        "bloat_oil_drench"
+      ],
+      "query": "gai ka left pet phool raha hai aur saans tez hai, tel pilana safe hai?",
+      "query_id": "retrieval_q_001",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "bloat_distress"
+      ],
+      "query": "My buffalo ate fresh green fodder and the belly feels tight. What should I avoid?",
+      "query_id": "retrieval_q_002",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "image_diagnosis"
+      ],
+      "query": "photo se pet phoola lag raha hai, bloat confirm kiye bina kya check karu?",
+      "query_id": "retrieval_q_003",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "calving_force"
+      ],
+      "query": "bhains ko bachda hone mein der ho rahi hai, zor se kheenchna chahiye?",
+      "query_id": "retrieval_q_004",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "yellow",
+      "irrelevant_safety_categories": [],
+      "line_count": 10,
+      "matched_safety_categories": [],
+      "query": "calving area ko clean kaise rakhe jab bachda hone wala hai?",
+      "query_id": "retrieval_q_005",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "milk_sale",
+        "milk_abnormal",
+        "image_diagnosis"
+      ],
+      "query": "gai ke doodh mein clot ya blood jaisa dikh raha hai, doodh alag rakhna hai?",
+      "query_id": "retrieval_q_006",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "milk_abnormal"
+      ],
+      "query": "The udder feels hot and painful. What should I check?",
+      "query_id": "retrieval_q_007",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "milk_sale"
+      ],
+      "query": "Doodh ki smell badal gayi hai aur bechna zaroori hai, safe boundary kya hai?",
+      "query_id": "retrieval_q_008",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "yellow",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "wound_irritant"
+      ],
+      "query": "gai ke ghav par makhi/maggot dikh rahe hain, mirch ya raakh lagau?",
+      "query_id": "retrieval_q_009",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "green",
+      "irrelevant_safety_categories": [],
+      "line_count": 9,
+      "matched_safety_categories": [],
+      "query": "My ox surface wound is dirty. What is safe with clean water only?",
+      "query_id": "retrieval_q_010",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "red",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "outbreak_movement"
+      ],
+      "query": "Kai pashu ek hi feed ke baad beemar lag rahe hain, kya note karu?",
+      "query_id": "retrieval_q_011",
+      "requires_follow_up": false
+    },
+    {
+      "final_risk": "yellow",
+      "irrelevant_safety_categories": [],
+      "line_count": 12,
+      "matched_safety_categories": [
+        "image_diagnosis"
+      ],
+      "query": "feed mein fungus aur mold dikh raha hai, kya avoid karna hai?",
+      "query_id": "retrieval_q_012",
+      "requires_follow_up": false
+    }
+  ],
+  "valid": true
+}

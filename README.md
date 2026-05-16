@@ -5,6 +5,11 @@ ox, and calves. It is an assistant, not a veterinarian: it gives safe
 supportive care, routine husbandry help, myth correction, and escalation
 guidance without prescribing medicines, injections, dosages, or procedures.
 
+PashuPulse is intentionally framed as an **offline bounded livestock safety
+assistant** for first-line guidance, myth correction, uncertainty-aware
+follow-up, and escalation support. It is not an AI veterinarian or diagnosis
+system.
+
 ## What Is Here
 
 - auditable seed-bank and expansion tooling
@@ -60,70 +65,68 @@ would teach bad priors: miracle cures, unsafe folk remedies, raw drug doses,
 injection routes, procedure walkthroughs, anti-vaccine claims, product spam, and
 bad OCR. Quarantined CPT chunks are not allowed as SFT/RAG factual grounding.
 
-## CPT/DAPT Research Artifacts
+## Offline Retrieval Cards
 
-The CPT/DAPT research pass is separate from training. It asks whether continued
-pretraining is worth attempting for livestock knowledge grounding before any
-parameter or Kaggle launch discussion:
+The offline retrieval-card pipeline builds a small runtime safety pack for
+high-risk farmer questions. Cards are **not training rows**. They are grounded
+in reviewed `source_claims.jsonl`; final-eval rubrics are used only for coverage
+and tests; CPT chunks are not used as factual RAG grounding.
 
-```powershell
-python pashu_saathi/scripts/build_cpt_research_artifacts.py --out-dir pashu_saathi/data/processed/cpt_research --library-dir pashu_saathi/data/sources/offline_library_v1
-```
-
-Generated artifacts include source-family train/dev/test splits, a corpus audit,
-an eval-only source-derived question bank, an experiment matrix, and a go/no-go
-decision template. These artifacts explicitly keep `training_allowed` and
-`sft_allowed` false.
-
-Research docs:
-
-- `docs/cpt_dapt_research_brief.md`
-- `docs/cpt_eval_design.md`
-
-## Offline Source Library
-
-The broader offline source acquisition workflow downloads raw sources, extracts
-text, builds cleaned chunks, and records coverage/safety manifests for a later
-grounding-selection pass:
+Build the current card pack:
 
 ```powershell
-python pashu_saathi/scripts/build_offline_source_library.py --out-dir pashu_saathi/data/sources/offline_library_v1
+python pashu_saathi/scripts/build_retrieval_cards.py --out-dir pashu_saathi/data/processed/retrieval_cards
 ```
 
-This library is coverage-first. It preserves English and Hindi/Hinglish-relevant
-sources for cow, buffalo, ox/bullock, and calf topics, but it is not directly
-approved for SFT or farmer-facing retrieval until a separate grounding review
-chooses the safe subset.
+Generated artifacts:
 
-Current library snapshot:
+- `retrieval_cards.jsonl`
+- `retrieval_card_embeddings.npz`
+- `retrieval_semantic_manifest.json`
+- `retrieval_ablation_report.json`
+- `retrieval_context_quality_report.json`
+- `retrieval_demo_cases.jsonl`
+- `retrieval_eval_queries.jsonl`
+- `retrieval_card_manifest.json`
+- `retrieval_card_quality_report.json`
+- `retrieval_card_safety_report.json`
 
-- `74` cataloged source records
-- `60` accepted or accepted-after-stripping sources
-- `64` raw downloaded files preserved offline
-- `3,799` clean chunks
-- about `2.54M` clean tokens
-- coverage gate passes for cow, buffalo, calf, ox/bullock, feeding, water,
-  shed hygiene, milk hygiene, heat/cold stress, calf care, pregnancy/calving,
-  bloat, wounds, diarrhea, FMD-like signs, poisoning/spoiled feed, parasites,
-  bites, and working ox care
+The retriever now supports three offline modes:
 
-The raw, extracted, and cleaned source files are stored with Git LFS because the
-offline corpus is large. After cloning, run:
+- `fallback`: BM25-compatible keyword scoring plus deterministic safety
+  triggers.
+- `phone_safe`: BM25 plus deterministic semantic vectors and safety triggers.
+  This is the default phone-oriented mode.
+- `demo_plus`: `phone_safe` plus optional top-5 reranking for hackathon demos.
 
-```powershell
-git lfs pull
-```
+The semantic artifact is intentionally small and auditable. It uses reviewed
+card text plus a controlled livestock/myth alias ontology today, while the
+manifest records future Android embedding-model candidates such as
+`intfloat/multilingual-e5-small` and
+`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Safety-triggered
+red cards are protected: semantic scoring or reranking can reorder candidates,
+but cannot suppress hard safety matches.
 
-Useful teammate starting points:
+Context Composer v2 is the runtime rendering layer. It stops dumping whole
+cards into the prompt and instead renders only the most relevant facts, safe
+actions, red flags, topic-specific avoid lines, and escalation text. Internal
+hard bans remain in audit/validator metadata rather than becoming repetitive
+visible boilerplate. The design principle is: **smallest useful safe answer**.
 
-- `data/sources/offline_library_v1/manifests/source_download_manifest.jsonl`
-- `data/sources/offline_library_v1/manifests/source_quality_manifest.jsonl`
-- `data/sources/offline_library_v1/reports/source_coverage_report.json`
-- `data/sources/offline_library_v1/reports/source_safety_filter_report.json`
-- `data/sources/offline_library_v1/cpt_clean_chunks.jsonl`
+The composer also performs safety severity arbitration. Explicit protected
+triggers control the final risk, but retrieved red cards do not create alarmist
+tone unless the query or top card provides strong evidence. Lower-risk cards can
+contribute facts, while the highest relevant risk controls escalation.
 
-The next pass should select a smaller strict grounding subset from the accepted
-sources. Do not treat the broad CPT/offline library as final answer authority.
+Protected triggers include oil/drench/puncture with bloat, hard pulling during
+calving, dog-bite saliva exposure near children, abnormal milk sale pressure,
+carcass handling after sudden death, photo-only diagnosis requests, and
+medicine/injection/dose pressure.
+
+If semantic artifacts fail on-device, the system falls back to BM25-style
+keyword scoring plus deterministic safety routing. If retrieval confidence is
+low, the assistant asks one critical follow-up or gives generic bounded holding
+guidance. If generation fails validation, use the minimal safe fallback.
 
 ## Safety Boundaries
 
@@ -131,6 +134,51 @@ Hard bans include confident diagnosis, pills, injections, dosages, antibiotics,
 painkillers, dewormers, vaccine administration, oil/drenching for bloat,
 kerosene/alcohol, wound irritants, force-feeding, puncturing swelling, hard calf
 pulling, fake contacts, unsafe milk/meat claims, and working injured oxen.
+
+Runtime validators block medicine/dose/injection/procedure instructions,
+unsupported diagnosis certainty, guaranteed milk/meat safety claims, and
+irrelevant policy leakage.
+
+## RAG + Gemma Inference Notebook
+
+The Kaggle inference notebook/script lives in `kaggle_rag_gemma_inference/`.
+It is intentionally inference-only, not an SFT run. It compares:
+
+- Gemma alone.
+- Gemma with Context Composer v2 retrieval context.
+- Gemma with Context Composer v2 plus post-generation validator/fallback.
+
+Run locally as a dry-run:
+
+```powershell
+$env:PASHU_RAG_DRY_RUN = "1"
+$env:PASHU_RAG_OUT_DIR = "test_runs/rag_gemma_inference_dry"
+python kaggle_rag_gemma_inference/rag_gemma_inference.py
+```
+
+Expected Kaggle outputs:
+
+- `rag_generation_trace.jsonl`
+- `rag_generation_predictions.jsonl`
+- `rag_validator_report.json`
+- `rag_demo_table.csv`
+- `rag_notebook_manifest.json`
+
+The notebook records retrieved card IDs, rendered context, suppressed fields,
+raw Gemma answer, validator result, final answer, and fallback use for every
+row. Use this before more SFT to decide whether failures are prompt/composer,
+validator, retrieval, or model-style problems.
+
+## Out Of Scope
+
+- Disease diagnosis.
+- Medicine prescription or dosage.
+- Injection or vaccine administration guidance.
+- Surgery or invasive procedure instructions.
+- Replacement for veterinarians or emergency care.
+- Guaranteed milk/meat safety.
+- Image-only disease certainty.
+- Broad livestock medical reasoning beyond first-line safety guidance.
 
 ## Kaggle Account Isolation
 

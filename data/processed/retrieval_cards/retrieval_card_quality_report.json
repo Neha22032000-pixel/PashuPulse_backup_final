@@ -1,0 +1,309 @@
+{
+  "card_count": 50,
+  "errors": [],
+  "eval_row_count_used_for_coverage_only": 233,
+  "eval_topic_counts_sample": {
+    "buffalo": 70,
+    "calf": 30,
+    "concise_field_note": 45,
+    "cow": 75,
+    "english": 75,
+    "family_helper": 45,
+    "final_eval_seed": 225,
+    "heat stress": 30,
+    "hinglish": 150,
+    "image-caption uncertainty": 45,
+    "image_caption_uncertainty": 45,
+    "offline_checklist": 45,
+    "ox": 50,
+    "ox yoke/hoof injury": 30,
+    "questions_first_triage": 45,
+    "red": 105,
+    "red emergency": 90,
+    "red_emergency": 90,
+    "remedy pressure": 30,
+    "review_card": 45,
+    "rural_pressure_myth": 30,
+    "snake/dog bite": 30,
+    "yellow": 105,
+    "yellow triage": 45,
+    "yellow_triage": 45
+  },
+  "retrieval_ablation": {
+    "default_mode": "phone_safe",
+    "embedding_dim": 384,
+    "model_candidates": [
+      {
+        "name": "intfloat/multilingual-e5-small",
+        "reason": "Small multilingual sentence embedding model candidate for phone_safe mode.",
+        "role": "primary_future_android_candidate"
+      },
+      {
+        "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "reason": "Compact multilingual sentence similarity candidate if the primary is unavailable or too slow.",
+        "role": "backup_future_android_candidate"
+      }
+    ],
+    "modes": {
+      "bm25_only_fallback": {
+        "false_red_trigger_rate": 0.1509,
+        "hit_at_1": 0.7736,
+        "hit_at_3": 1.0,
+        "misses": [],
+        "mrr": 0.8711,
+        "query_count": 53,
+        "red_hit_at_3": 1.0,
+        "unsafe_miss_count": 0
+      },
+      "demo_plus": {
+        "false_red_trigger_rate": 0.1887,
+        "hit_at_1": 0.7925,
+        "hit_at_3": 1.0,
+        "misses": [],
+        "mrr": 0.8836,
+        "query_count": 53,
+        "red_hit_at_3": 1.0,
+        "unsafe_miss_count": 0
+      },
+      "dense_only": {
+        "false_red_trigger_rate": 0.1321,
+        "hit_at_1": 0.6415,
+        "hit_at_3": 0.7736,
+        "misses": [
+          {
+            "expected_card_ids": [
+              "moldy_feed_prevention",
+              "moldy_feed_prevention_helper"
+            ],
+            "query": "feed mein fungus aur mold dikh raha hai, kya avoid karna hai?",
+            "retrieved_card_ids": [
+              "image_uncertainty_general",
+              "wound_photo_uncertainty",
+              "multiple_animals_sick"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "fmd_mouth_hoof_cluster"
+            ],
+            "query": "muh aur khur par chhale hain aur kai pashu affected hain",
+            "retrieved_card_ids": [
+              "multiple_animals_sick",
+              "spoiled_feed_many_animals",
+              "ox_yoke_injury_work_stop"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "heat_collapse"
+            ],
+            "query": "garmi mein pashu collapse ho raha hai aur paani nahi pee raha",
+            "retrieved_card_ids": [
+              "ox_yoke_injury_work_stop",
+              "image_uncertainty_general",
+              "supportive_first_aid_holding"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "neurological_circling"
+            ],
+            "query": "bhains chakkar kaat rahi hai aur strange behavior hai",
+            "retrieved_card_ids": [
+              "moldy_feed_prevention_helper",
+              "moldy_feed_prevention",
+              "multiple_animals_sick"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "udder_blood_clot_milk",
+              "udder_blood_clot_milk_helper",
+              "udder_hot_painful",
+              "udder_hot_painful_helper"
+            ],
+            "query": "doodh me khoon aur than dard",
+            "retrieved_card_ids": [
+              "surface_wound_clean_water",
+              "surface_wound_clean_water_helper",
+              "shed_hygiene_monsoon"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_cow",
+              "bloat_red_flag_cow_helper"
+            ],
+            "query": "cow belly swollen after lush fodder, someone says mustard oil",
+            "retrieved_card_ids": [
+              "image_uncertainty_general",
+              "supportive_first_aid_holding",
+              "wound_photo_uncertainty"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_buffalo",
+              "bloat_red_flag_buffalo_helper"
+            ],
+            "query": "bhains ka pait tight hai hara chara khane ke baad",
+            "retrieved_card_ids": [
+              "supportive_first_aid_holding",
+              "image_uncertainty_general",
+              "medicine_shop_pressure"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_cow",
+              "bloat_red_flag_cow_helper"
+            ],
+            "query": "gai ka pait ful gya tel de du kya",
+            "retrieved_card_ids": [
+              "supportive_first_aid_holding",
+              "image_uncertainty_general",
+              "multiple_animals_sick"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "udder_blood_clot_milk",
+              "udder_blood_clot_milk_helper",
+              "udder_hot_painful",
+              "udder_hot_painful_helper"
+            ],
+            "query": "dudh me khoon than dard",
+            "retrieved_card_ids": [
+              "surface_wound_clean_water",
+              "surface_wound_clean_water_helper",
+              "shed_hygiene_monsoon"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_cow",
+              "bloat_red_flag_cow_helper"
+            ],
+            "query": "गाय का पेट फूल रहा है और सांस तेज है",
+            "retrieved_card_ids": [
+              "supportive_first_aid_holding",
+              "image_uncertainty_general",
+              "medicine_shop_pressure"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_cow",
+              "bloat_red_flag_cow_helper"
+            ],
+            "query": "गाय का पेट फूल रहा है और सांस तेज है",
+            "retrieved_card_ids": [
+              "supportive_first_aid_holding",
+              "image_uncertainty_general",
+              "medicine_shop_pressure"
+            ]
+          },
+          {
+            "expected_card_ids": [
+              "bloat_red_flag_buffalo",
+              "bloat_red_flag_buffalo_helper",
+              "bloat_red_flag_cow",
+              "bloat_red_flag_cow_helper"
+            ],
+            "query": "gas nikalne ke liye pipe ya puncture kar sakte hain?",
+            "retrieved_card_ids": [
+              "multiple_animals_sick",
+              "surface_wound_clean_water",
+              "calving_clean_area"
+            ]
+          }
+        ],
+        "mrr": 0.6981,
+        "query_count": 53,
+        "red_hit_at_3": 0.6333,
+        "unsafe_miss_count": 11
+      },
+      "phone_safe": {
+        "false_red_trigger_rate": 0.1887,
+        "hit_at_1": 0.7925,
+        "hit_at_3": 1.0,
+        "misses": [],
+        "mrr": 0.8836,
+        "query_count": 53,
+        "red_hit_at_3": 1.0,
+        "unsafe_miss_count": 0
+      }
+    },
+    "retrieval_modes": {
+      "demo_plus": "phone_safe plus deterministic top-5 reranking for hackathon demos.",
+      "fallback": "BM25 plus deterministic safety triggers only.",
+      "phone_safe": "BM25 plus deterministic semantic vectors and safety triggers; no reranker."
+    },
+    "semantic_backend": "deterministic_alias_hashing",
+    "semantic_embedding_version": "offline-hybrid-semantic-v1"
+  },
+  "retrieval_metrics": {
+    "false_red_trigger_rate": 0.1887,
+    "hit_at_1": 0.7925,
+    "hit_at_3": 1.0,
+    "misses": [],
+    "mrr": 0.8836,
+    "query_count": 53,
+    "red_hit_at_3": 1.0,
+    "unsafe_miss_count": 0
+  },
+  "risk_counts": {
+    "green": 8,
+    "red": 26,
+    "yellow": 16
+  },
+  "topic_counts": {
+    "FMD-like signs": 2,
+    "abortion cluster": 2,
+    "bite": 3,
+    "bloat": 8,
+    "breathing": 1,
+    "calf": 2,
+    "calf diarrhea/dehydration": 1,
+    "calf feeding/warmth": 1,
+    "calving trouble": 6,
+    "carcass": 1,
+    "clean calving area": 2,
+    "clean milk": 2,
+    "diarrhea": 1,
+    "family helper": 17,
+    "feed storage": 2,
+    "feeding": 8,
+    "fly control": 3,
+    "heat stress": 2,
+    "image-caption uncertainty": 5,
+    "market": 1,
+    "mastitis/milk hygiene": 6,
+    "medicine_request": 1,
+    "milk hygiene": 2,
+    "milk safety": 4,
+    "monitor_support": 1,
+    "monsoon shed hygiene": 1,
+    "movement": 1,
+    "neurological signs": 1,
+    "outbreak": 2,
+    "ox workload/yoke injury": 1,
+    "poisoning/spoiled feed": 2,
+    "prevention": 2,
+    "public_health_isolation": 1,
+    "remedy pressure": 1,
+    "reportable": 2,
+    "reproductive red flag": 2,
+    "routine hygiene": 2,
+    "shed hygiene": 2,
+    "snake/dog bite": 3,
+    "spoiled feed": 2,
+    "sudden death/carcass risk": 1,
+    "supportive_first_aid": 1,
+    "udder discomfort": 2,
+    "water": 2,
+    "working ox": 2,
+    "wounds/maggots": 7
+  },
+  "valid": true
+}

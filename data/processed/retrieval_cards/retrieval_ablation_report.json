@@ -1,0 +1,213 @@
+{
+  "default_mode": "phone_safe",
+  "embedding_dim": 384,
+  "model_candidates": [
+    {
+      "name": "intfloat/multilingual-e5-small",
+      "reason": "Small multilingual sentence embedding model candidate for phone_safe mode.",
+      "role": "primary_future_android_candidate"
+    },
+    {
+      "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "reason": "Compact multilingual sentence similarity candidate if the primary is unavailable or too slow.",
+      "role": "backup_future_android_candidate"
+    }
+  ],
+  "modes": {
+    "bm25_only_fallback": {
+      "false_red_trigger_rate": 0.1509,
+      "hit_at_1": 0.7736,
+      "hit_at_3": 1.0,
+      "misses": [],
+      "mrr": 0.8711,
+      "query_count": 53,
+      "red_hit_at_3": 1.0,
+      "unsafe_miss_count": 0
+    },
+    "demo_plus": {
+      "false_red_trigger_rate": 0.1887,
+      "hit_at_1": 0.7925,
+      "hit_at_3": 1.0,
+      "misses": [],
+      "mrr": 0.8836,
+      "query_count": 53,
+      "red_hit_at_3": 1.0,
+      "unsafe_miss_count": 0
+    },
+    "dense_only": {
+      "false_red_trigger_rate": 0.1321,
+      "hit_at_1": 0.6415,
+      "hit_at_3": 0.7736,
+      "misses": [
+        {
+          "expected_card_ids": [
+            "moldy_feed_prevention",
+            "moldy_feed_prevention_helper"
+          ],
+          "query": "feed mein fungus aur mold dikh raha hai, kya avoid karna hai?",
+          "retrieved_card_ids": [
+            "image_uncertainty_general",
+            "wound_photo_uncertainty",
+            "multiple_animals_sick"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "fmd_mouth_hoof_cluster"
+          ],
+          "query": "muh aur khur par chhale hain aur kai pashu affected hain",
+          "retrieved_card_ids": [
+            "multiple_animals_sick",
+            "spoiled_feed_many_animals",
+            "ox_yoke_injury_work_stop"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "heat_collapse"
+          ],
+          "query": "garmi mein pashu collapse ho raha hai aur paani nahi pee raha",
+          "retrieved_card_ids": [
+            "ox_yoke_injury_work_stop",
+            "image_uncertainty_general",
+            "supportive_first_aid_holding"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "neurological_circling"
+          ],
+          "query": "bhains chakkar kaat rahi hai aur strange behavior hai",
+          "retrieved_card_ids": [
+            "moldy_feed_prevention_helper",
+            "moldy_feed_prevention",
+            "multiple_animals_sick"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "udder_blood_clot_milk",
+            "udder_blood_clot_milk_helper",
+            "udder_hot_painful",
+            "udder_hot_painful_helper"
+          ],
+          "query": "doodh me khoon aur than dard",
+          "retrieved_card_ids": [
+            "surface_wound_clean_water",
+            "surface_wound_clean_water_helper",
+            "shed_hygiene_monsoon"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_cow",
+            "bloat_red_flag_cow_helper"
+          ],
+          "query": "cow belly swollen after lush fodder, someone says mustard oil",
+          "retrieved_card_ids": [
+            "image_uncertainty_general",
+            "supportive_first_aid_holding",
+            "wound_photo_uncertainty"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_buffalo",
+            "bloat_red_flag_buffalo_helper"
+          ],
+          "query": "bhains ka pait tight hai hara chara khane ke baad",
+          "retrieved_card_ids": [
+            "supportive_first_aid_holding",
+            "image_uncertainty_general",
+            "medicine_shop_pressure"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_cow",
+            "bloat_red_flag_cow_helper"
+          ],
+          "query": "gai ka pait ful gya tel de du kya",
+          "retrieved_card_ids": [
+            "supportive_first_aid_holding",
+            "image_uncertainty_general",
+            "multiple_animals_sick"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "udder_blood_clot_milk",
+            "udder_blood_clot_milk_helper",
+            "udder_hot_painful",
+            "udder_hot_painful_helper"
+          ],
+          "query": "dudh me khoon than dard",
+          "retrieved_card_ids": [
+            "surface_wound_clean_water",
+            "surface_wound_clean_water_helper",
+            "shed_hygiene_monsoon"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_cow",
+            "bloat_red_flag_cow_helper"
+          ],
+          "query": "गाय का पेट फूल रहा है और सांस तेज है",
+          "retrieved_card_ids": [
+            "supportive_first_aid_holding",
+            "image_uncertainty_general",
+            "medicine_shop_pressure"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_cow",
+            "bloat_red_flag_cow_helper"
+          ],
+          "query": "गाय का पेट फूल रहा है और सांस तेज है",
+          "retrieved_card_ids": [
+            "supportive_first_aid_holding",
+            "image_uncertainty_general",
+            "medicine_shop_pressure"
+          ]
+        },
+        {
+          "expected_card_ids": [
+            "bloat_red_flag_buffalo",
+            "bloat_red_flag_buffalo_helper",
+            "bloat_red_flag_cow",
+            "bloat_red_flag_cow_helper"
+          ],
+          "query": "gas nikalne ke liye pipe ya puncture kar sakte hain?",
+          "retrieved_card_ids": [
+            "multiple_animals_sick",
+            "surface_wound_clean_water",
+            "calving_clean_area"
+          ]
+        }
+      ],
+      "mrr": 0.6981,
+      "query_count": 53,
+      "red_hit_at_3": 0.6333,
+      "unsafe_miss_count": 11
+    },
+    "phone_safe": {
+      "false_red_trigger_rate": 0.1887,
+      "hit_at_1": 0.7925,
+      "hit_at_3": 1.0,
+      "misses": [],
+      "mrr": 0.8836,
+      "query_count": 53,
+      "red_hit_at_3": 1.0,
+      "unsafe_miss_count": 0
+    }
+  },
+  "retrieval_modes": {
+    "demo_plus": "phone_safe plus deterministic top-5 reranking for hackathon demos.",
+    "fallback": "BM25 plus deterministic safety triggers only.",
+    "phone_safe": "BM25 plus deterministic semantic vectors and safety triggers; no reranker."
+  },
+  "semantic_backend": "deterministic_alias_hashing",
+  "semantic_embedding_version": "offline-hybrid-semantic-v1"
+}

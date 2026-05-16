@@ -1,0 +1,11 @@
+{
+  "card_count_checked": 50,
+  "errors": [],
+  "policy": {
+    "cpt_factual_grounding_allowed": false,
+    "dense_vector_search": "offline_alias_hashing_v1",
+    "eval_rubric_use": "coverage_and_tests_only",
+    "source_claim_use": "factual_card_evidence"
+  },
+  "valid": true
+}

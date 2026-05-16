@@ -1,0 +1,18 @@
+{
+  "code_file": "rag_gemma_inference.py",
+  "enable_gpu": true,
+  "enable_internet": true,
+  "id": "nehak76044/pashupulse-rag-gemma-inference",
+  "is_private": true,
+  "kernel_type": "script",
+  "language": "python",
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1"
+  ],
+  "dataset_sources": [
+    "nehak76044/pashupulse-rag-runtime-package",
+    "nehak76044/pashupulse-cpt-continuation-best-adapter"
+  ],
+  "competition_sources": [],
+  "title": "PashuPulse RAG Gemma Inference"
+}

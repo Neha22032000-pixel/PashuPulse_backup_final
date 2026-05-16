@@ -1,0 +1,174 @@
+{
+  "alias_ontology": {
+    "bite_saliva": [
+      "dog bite",
+      "kutte ne kaata",
+      "saliva",
+      "bachchon",
+      "snake bite",
+      "saanp",
+      "bite wound"
+    ],
+    "bloat_myth": [
+      "oil",
+      "mustard oil",
+      "sarson tel",
+      "tel",
+      "tel pilana",
+      "tel pilau",
+      "drench",
+      "force liquid",
+      "gas nikalna",
+      "puncture",
+      "pipe",
+      "stomach tube"
+    ],
+    "bloat_sign": [
+      "bloat",
+      "pet phoolna",
+      "pait fulna",
+      "pait ful",
+      "pet ful",
+      "left belly",
+      "left pet",
+      "tight belly",
+      "belly swollen",
+      "fast breathing",
+      "saans tez",
+      "सांस तेज",
+      "पेट फूल",
+      "green feed",
+      "hara chara",
+      "fresh fodder",
+      "lush fodder",
+      "सांस तेज",
+      "पेट फूल"
+    ],
+    "calf_diarrhea": [
+      "calf diarrhea",
+      "bachda dast",
+      "dast",
+      "weak calf",
+      "dehydration"
+    ],
+    "calving_danger": [
+      "pull hard",
+      "force",
+      "stuck",
+      "calf stuck",
+      "zor se kheenchna",
+      "kheenchna",
+      "bachda atka",
+      "abnormal position",
+      "abnormal presentation",
+      "delivery delay",
+      "rassi"
+    ],
+    "carcass_risk": [
+      "sudden death",
+      "dead animal",
+      "mara gaya",
+      "carcass",
+      "touch body"
+    ],
+    "heat_distress": [
+      "heat",
+      "garmi",
+      "collapse",
+      "not drinking",
+      "water break",
+      "shade"
+    ],
+    "image_uncertainty": [
+      "photo",
+      "image",
+      "dikh raha",
+      "confirm",
+      "diagnosis",
+      "disease confirm",
+      "pakka"
+    ],
+    "medicine_pressure": [
+      "injection",
+      "human tablet",
+      "painkiller",
+      "antibiotic",
+      "dose",
+      "dawa",
+      "shop medicine",
+      "vaccine"
+    ],
+    "milk_safety": [
+      "bad smell",
+      "smell changed",
+      "clot",
+      "blood",
+      "khoon",
+      "bechna",
+      "sale",
+      "safe boundary"
+    ],
+    "outbreak_report": [
+      "many animals",
+      "kai pashu",
+      "mouth blister",
+      "hoof",
+      "khur",
+      "market",
+      "movement"
+    ],
+    "wound_irritant": [
+      "mirch",
+      "chilli",
+      "raakh",
+      "ash",
+      "राख",
+      "कीड़े",
+      "घाव",
+      "gobar",
+      "mitti",
+      "unknown powder",
+      "strong chemical",
+      "kerosene",
+      "maggot",
+      "keede",
+      "makhi",
+      "mirchi",
+      "राख",
+      "कीड़े",
+      "घाव"
+    ],
+    "wound_sign": [
+      "ghav",
+      "zakhm",
+      "wound",
+      "dirty wound",
+      "surface wound",
+      "pus",
+      "bad smell",
+      "घाव",
+      "घाव"
+    ]
+  },
+  "artifact": "retrieval_card_embeddings.npz",
+  "backend": "deterministic_alias_hashing",
+  "card_count": 50,
+  "default_mode": "phone_safe",
+  "demo_plus_behavior": "Optional deterministic top-5 reranker; not required for phone claims.",
+  "embedding_dim": 384,
+  "embedding_version": "offline-hybrid-semantic-v1",
+  "fallback_behavior": "If semantic artifacts/model loading fail, use BM25 plus deterministic safety router.",
+  "model_candidates": [
+    {
+      "name": "intfloat/multilingual-e5-small",
+      "reason": "Small multilingual sentence embedding model candidate for phone_safe mode.",
+      "role": "primary_future_android_candidate"
+    },
+    {
+      "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "reason": "Compact multilingual sentence similarity candidate if the primary is unavailable or too slow.",
+      "role": "backup_future_android_candidate"
+    }
+  ],
+  "phone_safe_behavior": "BM25 plus deterministic semantic vectors plus safety router; no reranker."
+}
