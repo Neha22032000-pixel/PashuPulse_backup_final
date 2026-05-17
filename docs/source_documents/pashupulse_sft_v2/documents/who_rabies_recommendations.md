@@ -4,7 +4,7 @@
 
 - Publisher: World Health Organization
 - Source: Rabies recommendations and public-health guidance
-- URL: https://www.who.int/news-room/fact-sheets/detail/rabies
+- URL: https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations
 - Retrieval date: 2026-05-17
 - Source tier: international public health authority
 - Primary species/context: dog bite/saliva exposure, rabies risk, human safety
