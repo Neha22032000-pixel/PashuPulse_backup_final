@@ -4,7 +4,7 @@
 
 - Publisher: Food and Agriculture Organization of the United Nations
 - Source: Farmer-oriented animal first-aid / livestock first-aid material
-- URL: https://www.fao.org
+- URL: https://www.fao.org/4/t1265e/t1285e09.htm
 - Retrieval date: 2026-05-17
 - Source tier: international official / farmer education
 - Primary species/context: livestock first-line support before trained help
