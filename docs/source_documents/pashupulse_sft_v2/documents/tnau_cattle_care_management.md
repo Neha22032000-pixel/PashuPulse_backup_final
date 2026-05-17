@@ -4,7 +4,7 @@
 
 - Publisher: Tamil Nadu Agricultural University
 - Source: Cattle care and management educational material
-- URL: https://agritech.tnau.ac.in/animal_husbandry/animhus_cattle.html
+- URL: http://agritech.tnau.ac.in/animal_husbandry/animhus_cattle_care%26management.html
 - Retrieval date: 2026-05-17
 - Source tier: Indian agricultural university / extension education
 - Primary species/context: cattle management, calf care, feeding, housing, general care
