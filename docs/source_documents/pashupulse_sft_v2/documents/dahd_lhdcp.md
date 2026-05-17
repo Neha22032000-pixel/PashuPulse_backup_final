@@ -4,7 +4,7 @@
 
 - Publisher: Department of Animal Husbandry and Dairying, Government of India
 - Source: Livestock Health and Disease Control Programme overview
-- URL: https://www.dahd.gov.in/schemes/programmes/lhdcp
+- URL: https://monitor.dahd.gov.in/livestock-health-disease
 - Retrieval date: 2026-05-17
 - Source tier: Indian government official
 - Primary species/context: livestock health services and disease control
