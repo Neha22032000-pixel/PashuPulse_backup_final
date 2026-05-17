@@ -4,7 +4,7 @@
 
 - Publisher: National Dairy Development Board
 - Source: Drinking water guidance for dairy animals
-- URL: https://www.nddb.coop
+- URL: https://www.nddb.coop/farmer/animal-nutrition/importance-of-drinking-water-for-dairy-animals
 - Retrieval date: 2026-05-17
 - Source tier: Indian dairy institution / farmer education
 - Primary species/context: dairy cattle and buffaloes
