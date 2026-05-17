@@ -11,3 +11,5 @@ pytest-cache-files-*/
 *.pt
 *.pth
 *.egg-info/
+docs/source_documents/**/raw_downloads/*
+!docs/source_documents/**/raw_downloads/.gitignore
