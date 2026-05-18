@@ -1,7 +1,19 @@
 {
-  "version": "pashupulse_retrieval_config_v1",
+  "version": "pashupulse_retrieval_config_v2",
   "primary_file": "knowledge_chunks.jsonl",
   "safety_file": "safety_rules.jsonl",
+  "routing_policy": {
+    "default_for_general_low_risk_queries": "cpt_only_no_retrieval",
+    "use_retrieval_when": [
+      "unsafe myth or home remedy request",
+      "medicine, injection, dose, or shop pressure",
+      "emergency or red-flag symptom",
+      "public-health, milk/meat safety, carcass, bite, or outbreak concern",
+      "photo/text diagnosis uncertainty",
+      "user explicitly asks for source-backed guidance"
+    ],
+    "reason": "Keep normal answers natural with CPT, but use offline knowledge when safety, grounding, or escalation matters."
+  },
   "recommended_modes": {
     "fallback": "keyword/BM25 over chunk text and aliases",
     "phone_safe": "BM25 plus optional small multilingual embeddings",
@@ -23,10 +35,12 @@
   "penalties": {
     "topic_mismatch": -1.0,
     "species_mismatch": -1.0,
-    "red_chunk_without_red_anchor": -1.5
+    "red_chunk_without_red_anchor": -1.5,
+    "routine_query_red_chunk": -2.0
   },
   "rendering_rules": [
     "Never dump full chunks; render only the most relevant lines.",
+    "Green/general CPT-only queries should not retrieve unless source-backed answer is requested.",
     "Green answers should not include unrelated red warnings.",
     "Protected safety triggers must include the relevant safety rule.",
     "If support is weak, ask one critical follow-up instead of inventing a diagnosis."
