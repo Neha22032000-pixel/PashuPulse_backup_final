@@ -1,0 +1,23 @@
+{
+  "code_file": "pashupulse_gemma_raw_cpt.py",
+  "competition_sources": [],
+  "dataset_sources": [
+    "nehak76044/pashupulse-cpt-raw-clean-package"
+  ],
+  "enable_gpu": true,
+  "enable_internet": true,
+  "id": "nehak76044/pashupulse-gemma-raw-cpt",
+  "is_private": true,
+  "kernel_type": "script",
+  "keywords": [
+    "pashupulse",
+    "gemma",
+    "cpt",
+    "qlora"
+  ],
+  "language": "python",
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1"
+  ],
+  "title": "PashuPulse Gemma Raw CPT"
+}
