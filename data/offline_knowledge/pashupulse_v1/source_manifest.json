@@ -1,0 +1,88 @@
+{
+  "version": "pashupulse_offline_knowledge_v1",
+  "created_at": "2026-05-18",
+  "purpose": "Offline local knowledge store for PashuPulse retrieval and SFT seed creation.",
+  "sources": [
+    {
+      "source_id": "dahd_lhdcp",
+      "publisher": "Department of Animal Husbandry and Dairying, Government of India",
+      "source_type": "government_official",
+      "url": "https://monitor.dahd.gov.in/livestock-health-disease",
+      "country_or_region": "India",
+      "topics": ["official_escalation", "disease_control", "veterinary_services"],
+      "allowed_use": ["rag", "sft_seed", "safety_policy"]
+    },
+    {
+      "source_id": "dahd_nadcp",
+      "publisher": "Department of Animal Husbandry and Dairying, Government of India",
+      "source_type": "government_official",
+      "url": "https://www.dahd.gov.in/schemes/programmes/nadcp",
+      "country_or_region": "India",
+      "topics": ["outbreak", "fmd", "brucellosis", "herd_health"],
+      "allowed_use": ["rag", "sft_seed", "safety_policy"]
+    },
+    {
+      "source_id": "nddb_clean_milk",
+      "publisher": "National Dairy Development Board",
+      "source_type": "official_dairy_institution",
+      "url": "https://www.nddb.coop/farmer/dairying/cmp",
+      "country_or_region": "India",
+      "topics": ["milk", "udder", "hygiene"],
+      "allowed_use": ["rag", "sft_seed"]
+    },
+    {
+      "source_id": "nddb_water",
+      "publisher": "National Dairy Development Board",
+      "source_type": "official_dairy_institution",
+      "url": "https://www.nddb.coop/farmer/animal-nutrition/importance-of-drinking-water-for-dairy-animals",
+      "country_or_region": "India",
+      "topics": ["water", "heat", "routine_observation"],
+      "allowed_use": ["rag", "sft_seed"]
+    },
+    {
+      "source_id": "nddb_feed_safety",
+      "publisher": "National Dairy Development Board",
+      "source_type": "official_dairy_institution",
+      "url": "https://www.nddb.coop/farmer/animal-health/disease/fungal/Aflatoxicosis",
+      "country_or_region": "India",
+      "topics": ["feed", "mold", "aflatoxin", "storage"],
+      "allowed_use": ["rag", "sft_seed"]
+    },
+    {
+      "source_id": "tnau_cattle_care",
+      "publisher": "Tamil Nadu Agricultural University",
+      "source_type": "university_extension",
+      "url": "http://agritech.tnau.ac.in/animal_husbandry/animhus_cattle_care%26management.html",
+      "country_or_region": "India",
+      "topics": ["cattle_care", "calf_care", "housing", "feeding", "routine_observation"],
+      "allowed_use": ["rag", "sft_seed"]
+    },
+    {
+      "source_id": "fao_first_aid",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "source_type": "intergovernmental",
+      "url": "https://www.fao.org/4/t1265e/t1285e09.htm",
+      "country_or_region": "international",
+      "topics": ["first_aid", "safe_support", "escalation"],
+      "allowed_use": ["rag", "sft_seed", "safety_policy"]
+    },
+    {
+      "source_id": "who_rabies",
+      "publisher": "World Health Organization",
+      "source_type": "public_health_authority",
+      "url": "https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations",
+      "country_or_region": "international",
+      "topics": ["rabies", "bite", "saliva", "public_health"],
+      "allowed_use": ["rag", "safety_policy"]
+    },
+    {
+      "source_id": "msd_mastitis_concept",
+      "publisher": "MSD/Merck Veterinary Manual",
+      "source_type": "veterinary_reference_quarantined",
+      "url": "https://www.merckvetmanual.com/reproductive-system/mastitis-in-large-animals/mastitis-in-cattle",
+      "country_or_region": "international",
+      "topics": ["mastitis", "udder", "abnormal_milk"],
+      "allowed_use": ["rag_concept_only", "safety_policy"]
+    }
+  ]
+}
