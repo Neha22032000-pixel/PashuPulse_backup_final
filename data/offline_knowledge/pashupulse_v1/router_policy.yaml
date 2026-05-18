@@ -1,0 +1,82 @@
+{
+  "answer_modes": {
+    "cpt_direct": "Low-risk routine answer from CPT with conservative safety style.",
+    "card_grounded": "Retrieve chunks and answer only from accepted evidence plus global safety policy.",
+    "safe_fallback": "Refuse unsafe exact/procedure part and give safe holding steps."
+  },
+  "intent_routes": {
+    "routine_care": {"risk_level": "green", "needs_evidence": false, "answer_mode": "cpt_direct", "retrieval": false},
+    "symptom_triage": {"risk_level": "yellow", "needs_evidence": false, "answer_mode": "cpt_direct", "retrieval": false},
+    "image_uncertainty": {"risk_level": "yellow", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "yellow_boundary"},
+    "medicine_request": {"risk_level": "red", "needs_evidence": true, "answer_mode": "safe_fallback", "retrieval": false},
+    "milk_food_safety": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "bloat_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "unsafe_remedy": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "calving_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "outbreak_public_health": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "carcass_public_health": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "bite_zoonotic": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "poisoning_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "breathing_collapse": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "wound_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "calf_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "postpartum_metabolic_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "choke_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "gi_bleeding_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "fertility_hormone_request": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "urinary_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "neuro_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"},
+    "heat_emergency": {"risk_level": "red", "needs_evidence": true, "answer_mode": "card_grounded", "retrieval": true, "threshold_key": "red"}
+  },
+  "hard_triggers": {
+    "medicine_request": ["sui", "injection", "tika laga du", "dawa", "dawa ka naam", "kitni dawa", "kitna ml", "kitna mg", "dose", "antibiotic", "painkiller", "goli", "tablet", "dewormer", "bukhar wali sui", "laal bottle", "pichli wali dawa", "medical shop", "human medicine", "paracetamol", "doctor dur hai dawa batao", "bina vet", "bachi hui antibiotic", "padosi ki dawa"],
+    "milk_food_safety": ["doodh bechna", "doodh me clot", "doodh me smell", "clot", "bad smell milk", "milk safe", "doodh safe hai", "withdrawal", "withdrawal period", "ghar me use", "bachde ko pila sakte", "medicine ke baad doodh", "antibiotic ke baad doodh", "doodh kitne din rokna", "meat safe", "meat bechna", "dead animal meat", "kha sakte hai", "bechna"],
+    "bloat_emergency": ["pet phoolna", "pait fulna", "paet phoola", "pet phoola", "pet ful raha", "pet tight", "left pet", "left side phooli", "gas bhar gaya", "hara chara ke baad", "bechain", "uth baith raha", "saans tez pet phoola", "tel pilau", "tel pilane", "oil pilana", "drench", "pipe dalu", "gas nikalna", "puncture", "stomach tube"],
+    "calving_emergency": ["bachda atka", "bachda nahi nikla", "bacha atka", "pani ki thaili", "water bag", "delivery ruk gayi", "prasav me der", "zor se kheenchu", "pull hard", "abnormal position", "pair dikha", "sir nahi dikha", "bhains delivery", "bakri bacha atka", "kidding problem", "lambing problem"],
+    "outbreak_public_health": ["kai pashu", "ek sath beemar", "many animals sick", "herd spread", "same symptoms", "muh me chhale", "muh khur chhale", "muh se lar", "drooling", "khur chhale", "mouth sore", "hoof blister", "market le jau", "bechna hai", "movement", "quarantine", "report", "fmd", "khurpakka"],
+    "carcass_public_health": ["sudden death", "achanak mar gaya", "mara hua pashu", "dead animal", "carcass", "blood from nose", "postmortem", "cut dead animal", "skin nikalna", "bury myself", "dogs near body", "children near body"],
+    "bite_zoonotic": ["dog bite", "kutta kaata", "kutte ne kaata", "kutta", "dog", "kaat liya", "saliva", "rabies", "pagal kutta", "snake bite", "saanp", "saap", "snake", "bite mark", "face swelling", "neck swelling", "muzzle swelling", "garam loha"],
+    "poisoning_emergency": ["zehar", "poison", "pesticide", "spray", "chemical", "insecticide", "herbicide", "kharab chara", "fungus", "mold", "unknown plant", "jungle grass", "tremor", "kampna", "drooling after feed", "feed ke baad kai pashu", "dawa chhidka", "jhaag", "muh se jhaag", "plastic", "kachra"],
+    "breathing_collapse": ["saans nahi", "saans tez", "saans me awaaz", "saans mein awaaz", "gale ke niche sujan", "gale me sujan", "open mouth breathing", "muh khol ke saans", "gasping", "blue tongue", "pale gums", "collapse", "gir gayi", "nahi uth rahi", "cannot stand", "not getting up", "lying down"],
+    "wound_emergency": ["heavy bleeding", "khoon bah raha", "deep cut", "gehra zakhm", "horn injury", "pus", "peep", "navel pe sujan", "nabhi sujan", "bad smell wound", "maggot", "keede", "makhi", "eye wound", "mirch lagau", "raakh", "gobar", "mitti", "kerosene", "phenyl", "acid"],
+    "calf_emergency": ["bachda doodh nahi pee raha", "not suckling", "weak calf", "cannot stand calf", "bachda thanda", "dast", "patla gobar", "sunken eyes", "force feed", "bottle se zabardasti", "pehla doodh", "khada nahi ho raha", "kitne ghante wait", "3 din ka bachda"],
+    "postpartum_metabolic_emergency": ["delivery ke baad khana nahi", "bachcha diya khana nahi", "daant pis", "doodh bahut kam", "calcium ki kami", "milk fever", "ketosis", "delivery ke baad uth nahi", "postpartum"],
+    "choke_emergency": ["gale me atak", "gale mein atak", "pani wapas aa raha", "khansi aur laar", "chara khaya fir khansi", "choking", "gale me kuch"],
+    "gi_bleeding_emergency": ["kala gobar", "black dung", "black feces", "badbu wala gobar", "internal bleeding", "tarry stool", "gobar kala"],
+    "fertility_hormone_request": ["heat me nahi aa", "heat nahi aa rahi", "hormone injection", "desi dawa heat", "repeat breeding", "delivery ke 4 mahine", "garam nahi aa rahi"],
+    "urinary_emergency": ["peshab nahi", "urine band", "bar bar peshab", "straining", "male goat urine", "pet dard no urine"],
+    "neuro_emergency": ["fit", "seizure", "chakkar", "circling", "head pressing", "paralysis", "kampna", "tremor", "strange behavior", "gir gir raha", "paddling"],
+    "heat_emergency": ["heat stroke", "garmi se gir", "panting", "fast breathing heat", "collapse in heat", "not drinking", "bahut garam", "garmi me saans tez"],
+    "image_uncertainty": ["photo", "tasveer", "image", "confirm", "disease batao", "photo se batao", "tasveer se confirm"]
+  },
+  "yellow_boundary_intents": ["image_uncertainty"],
+  "retrieval_gate": {
+    "method": "hybrid_bm25_embedding",
+    "scoring": {
+      "bm25_weight": 0.40,
+      "embedding_weight": 0.40,
+      "intent_match_weight": 0.10,
+      "species_match_weight": 0.05,
+      "risk_boost_weight": 0.05
+    },
+    "thresholds": {
+      "yellow_boundary": 0.65,
+      "red": 0.55
+    },
+    "minimum_rules": {
+      "require_allowed_use": "rag",
+      "require_intent_or_topic_match": true,
+      "reject_generic_style_chunks_for_high_risk": true
+    }
+  },
+  "fallback_rules": {
+    "cpt_direct": {"if_card_below_threshold": "answer_with_cpt_conservative"},
+    "card_grounded": {"if_card_below_threshold": "safe_fallback"},
+    "safe_fallback": {"if_card_below_threshold": "safe_fallback", "if_card_above_threshold": "safe_fallback_with_safe_steps_from_card"}
+  },
+  "answer_style": {
+    "urgent": "3-5 pointwise bullets",
+    "routine": "1-4 short sentences",
+    "mirror_language": true
+  }
+}
