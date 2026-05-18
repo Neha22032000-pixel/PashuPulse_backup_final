@@ -1,50 +1,25 @@
 {
-  "version": "pashupulse_topic_ontology_v1",
+  "version": "pashupulse_topic_ontology_v2",
+  "routing_policy": "Keep router broad. Use CPT-only for general low-risk queries. Retrieve this knowledge only for danger, myth, public-health, medicine-pressure, source-needed, or uncertainty cases.",
   "topics": {
-    "routine_observation": {
-      "aliases": ["normal", "thoda", "kam", "slow", "dull", "weak", "sust", "kha raha", "standing", "gobar normal"],
-      "default_risk": "green",
-      "retrieval_hint": "Prefer observation chunks unless red flags are explicit."
-    },
-    "water_heat": {
-      "aliases": ["paani", "water", "drinking", "garmi", "heat", "shade", "hot weather"],
-      "default_risk": "green"
-    },
-    "feed": {
-      "aliases": ["chara", "feed", "fodder", "dana", "mold", "fungus", "bad smell", "rain", "wet feed"],
-      "default_risk": "yellow"
-    },
-    "milk_udder": {
-      "aliases": ["doodh", "milk", "clot", "blood", "udder", "than", "sujan", "hot quarter", "bad smell"],
-      "default_risk": "yellow"
-    },
-    "bloat": {
-      "aliases": ["pet phool", "bloat", "left side", "tight belly", "gas", "tel", "oil", "drench", "puncture"],
-      "default_risk": "red"
-    },
-    "wound_skin": {
-      "aliases": ["ghav", "zakhm", "wound", "cut", "red mark", "sujan", "maggot", "makhi", "mirch", "raakh"],
-      "default_risk": "yellow"
-    },
-    "calf": {
-      "aliases": ["bachda", "bachdi", "calf", "loose motion", "dast", "dry feed", "doodh nahi pee raha"],
-      "default_risk": "yellow"
-    },
-    "calving": {
-      "aliases": ["bachda hone", "calving", "water bag", "kheench", "pull", "atka", "delivery"],
-      "default_risk": "red"
-    },
-    "bite_rabies": {
-      "aliases": ["dog", "bite", "saliva", "kutta", "kaata", "rabies", "children", "haath"],
-      "default_risk": "red"
-    },
-    "outbreak": {
-      "aliases": ["3 gai", "multiple animals", "muh chhale", "lar", "lameness", "market", "abortion cluster", "gaon"],
-      "default_risk": "red"
-    },
-    "medicine_pressure": {
-      "aliases": ["injection", "dose", "ml", "antibiotic", "tablet", "syrup", "dukaan", "doctor dur"],
-      "default_risk": "yellow"
-    }
+    "routine_observation": {"aliases": ["normal", "thoda", "kam", "slow", "dull", "weak", "sust", "kha raha", "standing", "gobar normal"], "default_risk": "green", "retrieval_hint": "Prefer CPT-only unless user asks source-backed guidance or red flags are present."},
+    "water_heat": {"aliases": ["paani", "water", "drinking", "garmi", "heat", "shade", "hot weather"], "default_risk": "green"},
+    "feed": {"aliases": ["chara", "feed", "fodder", "dana", "mold", "fungus", "bad smell", "rain", "wet feed"], "default_risk": "yellow"},
+    "milk_udder": {"aliases": ["doodh", "milk", "clot", "blood", "udder", "than", "sujan", "hot quarter", "bad smell"], "default_risk": "yellow"},
+    "bloat": {"aliases": ["pet phool", "bloat", "left side", "tight belly", "gas", "tel", "oil", "drench", "puncture"], "default_risk": "red"},
+    "wound_skin": {"aliases": ["ghav", "zakhm", "wound", "cut", "red mark", "sujan", "maggot", "makhi", "mirch", "raakh", "chemical burn", "acid", "kerosene"], "default_risk": "yellow"},
+    "calf": {"aliases": ["bachda", "bachdi", "calf", "loose motion", "dast", "dry feed", "doodh nahi pee raha"], "default_risk": "yellow"},
+    "calving": {"aliases": ["bachda hone", "calving", "water bag", "kheench", "pull", "atka", "delivery", "placenta", "afterbirth", "bad smell discharge"], "default_risk": "red"},
+    "bite_rabies": {"aliases": ["dog", "bite", "saliva", "kutta", "kaata", "rabies", "children", "haath"], "default_risk": "red"},
+    "outbreak": {"aliases": ["3 gai", "multiple animals", "muh chhale", "lar", "lameness", "market", "abortion cluster", "many chickens died", "bird flu", "ppr"], "default_risk": "red"},
+    "medicine_pressure": {"aliases": ["injection", "dose", "ml", "antibiotic", "tablet", "syrup", "dukaan", "doctor dur"], "default_risk": "yellow"},
+    "snakebite": {"aliases": ["snake", "saanp", "saap", "venom", "tourniquet", "black stone"], "default_risk": "red"},
+    "poisoning": {"aliases": ["poison", "zehar", "pesticide", "spray", "chemical", "toxic plant", "organophosphate", "tremor"], "default_risk": "red"},
+    "electrocution": {"aliases": ["electric", "current", "bijli", "wire", "lightning"], "default_risk": "red"},
+    "fracture_bleeding": {"aliases": ["fracture", "broken", "bone", "heavy bleeding", "deep cut", "horn injury"], "default_risk": "red"},
+    "urinary": {"aliases": ["peshab nahi", "urine band", "straining", "male goat"], "default_risk": "red"},
+    "neurological": {"aliases": ["seizure", "fit", "tremor", "circling", "head pressing", "paralysis"], "default_risk": "red"},
+    "carcass_public_health": {"aliases": ["sudden death", "dead animal", "carcass", "anthrax", "blood from nose", "eat meat"], "default_risk": "red"},
+    "poultry": {"aliases": ["poultry", "chicken", "murgi", "duck", "bird flu", "avian influenza"], "default_risk": "red"}
   }
 }
