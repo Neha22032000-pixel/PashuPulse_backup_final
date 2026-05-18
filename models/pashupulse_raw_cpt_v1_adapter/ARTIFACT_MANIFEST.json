@@ -1,0 +1,49 @@
+{
+  "artifact_name": "pashupulse_raw_cpt_v1_adapter",
+  "run_name": "pashupulse_raw_cpt_v1",
+  "source_kaggle_kernel": "nehak76044/pashupulse-gemma-raw-cpt",
+  "source_kaggle_output_path": "pashu_pulse_raw_cpt_v1/adapter_final",
+  "base_model": "google/gemma-4/Transformers/gemma-4-e2b-it/1",
+  "local_verified_paths": [
+    "C:/Users/nehak/OneDrive/Documents/New project/kaggle-output/pashupulse-gemma-raw-cpt/output/pashu_pulse_raw_cpt_v1/adapter_final",
+    "C:/Projects/New project/PashuPulse-main/kaggle_packages/pashupulse_raw_cpt_v1_adapter/adapter_final"
+  ],
+  "required_files": [
+    {
+      "name": "adapter_config.json",
+      "size": 14211,
+      "sha256": "c40d74104042e6ee7056fb15df9c721e10079b202e5ab4aceb8a9311c3ed5498"
+    },
+    {
+      "name": "adapter_model.safetensors",
+      "size": 50748080,
+      "sha256": "483a5546feb6e638458e8b1fba891beff83b51aaaf944abc0d3f041b9f4a9c65"
+    },
+    {
+      "name": "chat_template.jinja",
+      "size": 11926,
+      "sha256": "55572b8d3c8342044e25874c73fe5234b661fa0a57a57f6ef75b58e03d7d959a"
+    },
+    {
+      "name": "processor_config.json",
+      "size": 1688,
+      "sha256": "64cc87fb8b510da3dcd29368ed66f1c969146aadad63fd4a73de1c443cf62d99"
+    },
+    {
+      "name": "README.md",
+      "size": 5306,
+      "sha256": "6bc57eb071b1d1c3f012abb95b59a341eaf2f12147b77c03f7bc687d3301f131"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 32169626,
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 6861,
+      "sha256": "9d5a8e95097c91c90ad6d38b06eac92903b82245e2899f7447195e7424816044"
+    }
+  ],
+  "note": "The large binary adapter/tokenizer files are verified locally and available from the Kaggle kernel output. They are documented here with exact SHA256 checksums for reproducibility."
+}
