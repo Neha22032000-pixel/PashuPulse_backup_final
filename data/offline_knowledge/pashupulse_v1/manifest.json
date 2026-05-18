@@ -1,9 +1,9 @@
 {
-  "status": "complete_offline_knowledge_seed",
+  "status": "complete_offline_knowledge_seed_expanded_emergency_v2",
   "created_at": "2026-05-18",
-  "knowledge_chunk_count": 43,
-  "safety_rule_count": 9,
-  "source_count": 9,
+  "knowledge_chunk_count": 71,
+  "safety_rule_count": 20,
+  "source_count": 15,
   "primary_file": "data/offline_knowledge/pashupulse_v1/knowledge_chunks.jsonl",
   "safety_file": "data/offline_knowledge/pashupulse_v1/safety_rules.jsonl",
   "topics": [
@@ -15,18 +15,37 @@
     "wound_skin",
     "calf",
     "calving",
+    "post_calving",
     "bite_rabies",
     "outbreak",
     "medicine_pressure",
     "respiratory",
+    "diarrhea",
+    "dehydration",
+    "snakebite",
+    "poisoning",
+    "electrocution",
+    "bleeding",
+    "fracture",
+    "eye",
+    "urinary",
+    "neurological",
+    "sudden_death",
+    "carcass",
+    "heat_stress",
+    "choking",
+    "goat_sheep",
+    "poultry",
+    "public_health",
     "answer_style"
   ],
   "intended_use": [
-    "offline_rag_retrieval",
+    "offline_rag_retrieval_only_when_triggered",
     "sft_seed_creation",
     "safety_rule_prompting",
     "validator_rules"
   ],
+  "routing_note": "For routine non-danger questions, CPT can answer without retrieval. Retrieval should be triggered for myth, emergency, public-health, unsafe-action, uncertainty, source-needed, or high-risk queries.",
   "not_intended_for": [
     "veterinary_diagnosis",
     "medicine_dosing",
@@ -34,5 +53,5 @@
     "procedure_instructions",
     "milk_or_meat_safety_certification"
   ],
-  "notes": "This replaces earlier brief-style source documents for inference use. Retrieve chunks locally instead of relying on live web search."
+  "notes": "Canonical single-file knowledge store. Emergency/myth/high-risk chunks are merged into knowledge_chunks.jsonl so runtimes that load one file can access all relevant offline knowledge. Retrieve locally instead of relying on live web search."
 }
