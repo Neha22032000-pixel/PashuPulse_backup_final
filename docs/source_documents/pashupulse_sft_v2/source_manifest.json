@@ -1,0 +1,105 @@
+{
+  "created_for": "pashupulse_sft_v2_400",
+  "notes": "Canonical source list for the farmer-observable SFT v2 dataset. Raw downloaded pages are kept out of git; run scripts/download_pashupulse_sft_sources.py to recreate the local cache.",
+  "sources": [
+    {
+      "canonical_url": "https://monitor.dahd.gov.in/livestock-health-disease",
+      "download_file": "dahd_lhdcp_overview.html",
+      "download_sha256": "35308e05a4bebe4146db26b186c02384031054afe01cbcfc774c2e52829c23f3",
+      "license_note": "Government/public programme page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 372,
+      "source_id": "dahd_lhdcp",
+      "title": "DAHD Livestock Health and Disease Control Programme"
+    },
+    {
+      "canonical_url": "https://www.dahd.gov.in/schemes/programmes/nadcp",
+      "download_file": "dahd_nadcp.html",
+      "download_sha256": "e649a1ed1b154ca01ce39669943217eb5808aac7209418e1c0b1e4dabf4aed6f",
+      "license_note": "Government/public programme page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 72,
+      "source_id": "dahd_nadcp",
+      "title": "DAHD National Animal Disease Control Programme"
+    },
+    {
+      "canonical_url": "https://www.fao.org/4/t1265e/t1285e09.htm",
+      "download_file": "fao_farmer_first_aid.html",
+      "download_sha256": "46e1ea7da025359e1b1ec97eb30e782a22f3536baf889ee35fd790a1a82b48bc",
+      "license_note": "FAO public page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 328,
+      "source_id": "fao_farmer_first_aid",
+      "title": "FAO Farmer's First Aid"
+    },
+    {
+      "canonical_url": "https://www.nddb.coop/farmer/animal-health/disease/fungal/Aflatoxicosis",
+      "download_file": "nddb_aflatoxicosis.html",
+      "download_sha256": "75cba762eb11b91e98e89020c077ed217c76c4ed84a9dbc86bc617b8f70b5294",
+      "license_note": "NDDB public page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 68,
+      "source_id": "nddb_aflatoxicosis",
+      "title": "NDDB Aflatoxicosis"
+    },
+    {
+      "canonical_url": "https://www.nddb.coop/farmer/animal-health",
+      "download_file": null,
+      "download_sha256": null,
+      "license_note": "NDDB public farmer information; bloat category was grounded from NDDB-style farmer-facing animal health guidance.",
+      "row_mentions_in_sft_v2_400": 40,
+      "source_id": "nddb_bloat",
+      "title": "NDDB Bloat Grounding"
+    },
+    {
+      "canonical_url": "https://www.nddb.coop/farmer/animal-nutrition",
+      "download_file": null,
+      "download_sha256": null,
+      "license_note": "NDDB public farmer information; calf nutrition category also overlaps with TNAU cattle care guidance.",
+      "row_mentions_in_sft_v2_400": 32,
+      "source_id": "nddb_calf_nutrition",
+      "title": "NDDB Calf Nutrition Grounding"
+    },
+    {
+      "canonical_url": "https://www.nddb.coop/farmer/dairying/cmp",
+      "download_file": "nddb_clean_milk.html",
+      "download_sha256": "3d26afb28a05b1ea3a4705a79c160b4c306d784a23dbfa19da79f88c3b383515",
+      "license_note": "NDDB public page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 72,
+      "source_id": "nddb_clean_milk",
+      "title": "NDDB Clean Milk Production"
+    },
+    {
+      "canonical_url": "https://www.nddb.coop/farmer/animal-nutrition/importance-of-drinking-water-for-dairy-animals",
+      "download_file": "nddb_water.html",
+      "download_sha256": "1159048146f0abe3cf94d756d63165251ad925ae68db5a58d3db0ea910a252af",
+      "license_note": "NDDB public page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 28,
+      "source_id": "nddb_water",
+      "title": "NDDB Importance of Drinking Water for Dairy Animals"
+    },
+    {
+      "canonical_url": "http://agritech.tnau.ac.in/animal_husbandry/animhus_cattle_care%26management.html",
+      "download_file": "tnau_cattle_care_management.html",
+      "download_sha256": "68c6daa5d53ee32fc4bc3a969c817b8909baf1e1e3bf7cd4c8f42c4d6930a30a",
+      "license_note": "TNAU public educational page; HTTPS certificate failed during retrieval, HTTP was used.",
+      "row_mentions_in_sft_v2_400": 72,
+      "source_id": "tnau_calf_management",
+      "title": "TNAU Cattle Care and Management"
+    },
+    {
+      "canonical_url": "https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations",
+      "download_file": "who_rabies_recommendations.html",
+      "download_sha256": "1e9de1eddeb0a1632ad89231433bc2b6c53196d14f1fd3df98780baa3d11eb3f",
+      "license_note": "WHO public page; verify reuse terms before redistributing copied text.",
+      "row_mentions_in_sft_v2_400": 36,
+      "source_id": "who_rabies",
+      "title": "WHO Rabies Recommendations"
+    },
+    {
+      "canonical_url": "https://www.merckvetmanual.com/reproductive-system/mastitis-in-large-animals/mastitis-in-cattle",
+      "download_file": "msd_merck_mastitis_cattle.html",
+      "download_sha256": "8e52a5e811888908d3ecc9314b6b93a3fcf8da6f2f82f741c863cc5cc1d4a465",
+      "license_note": "Merck/MSD page is third-party copyrighted reference material; keep raw copy local for audit only unless explicit reuse permission is confirmed.",
+      "row_mentions_in_sft_v2_400": 36,
+      "source_id": "msd_mastitis",
+      "title": "Merck/MSD Mastitis in Cattle"
+    }
+  ]
+}
