@@ -1,0 +1,21 @@
+{
+  "blocked_without_evidence": [
+    "medicine_names_as_treatment",
+    "dose_units",
+    "injection_instructions",
+    "withdrawal_periods",
+    "vaccine_schedules",
+    "milk_or_meat_safety_guarantees",
+    "disease_confirmation",
+    "invasive_procedures"
+  ],
+  "patterns": {
+    "dose_units": ["\\b\\d+(\\.\\d+)?\\s*(mg|ml|iu|g)\\b", "\\bper kg\\b", "\\b/kg\\b"],
+    "injection_instructions": ["\\binject\\b", "\\binjection\\b", "\\bsui\\b", "\\btika laga\\b"],
+    "procedure_terms": ["puncture", "pipe", "stomach tube", "pull hard", "zor se kheench", "trocar", "cut open"],
+    "withdrawal_periods": ["withdrawal period", "doodh kitne din", "\\b\\d+\\s*(din|days|hours|ghante)\\b"],
+    "safety_guarantees": ["milk is safe", "doodh safe hai", "bech sakte ho", "meat safe", "kha sakte hai"],
+    "disease_confirmation": ["yeh fmd hai", "this is fmd", "yeh rabies hai", "this is rabies", "confirmed"]
+  },
+  "fallback_template": "Bina trained advice ke dawa, sui, dose, ya procedure mat do. Animal ko shaant rakho, paani accessible rakho agar woh normal pee sakta hai, aur red flags ho toh para-vet/doctor ko jaldi bulao."
+}
