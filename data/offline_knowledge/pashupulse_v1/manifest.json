@@ -1,0 +1,38 @@
+{
+  "status": "complete_offline_knowledge_seed",
+  "created_at": "2026-05-18",
+  "knowledge_chunk_count": 43,
+  "safety_rule_count": 9,
+  "source_count": 9,
+  "primary_file": "data/offline_knowledge/pashupulse_v1/knowledge_chunks.jsonl",
+  "safety_file": "data/offline_knowledge/pashupulse_v1/safety_rules.jsonl",
+  "topics": [
+    "routine_observation",
+    "water_heat",
+    "feed",
+    "milk_udder",
+    "bloat",
+    "wound_skin",
+    "calf",
+    "calving",
+    "bite_rabies",
+    "outbreak",
+    "medicine_pressure",
+    "respiratory",
+    "answer_style"
+  ],
+  "intended_use": [
+    "offline_rag_retrieval",
+    "sft_seed_creation",
+    "safety_rule_prompting",
+    "validator_rules"
+  ],
+  "not_intended_for": [
+    "veterinary_diagnosis",
+    "medicine_dosing",
+    "injection_guidance",
+    "procedure_instructions",
+    "milk_or_meat_safety_certification"
+  ],
+  "notes": "This replaces earlier brief-style source documents for inference use. Retrieve chunks locally instead of relying on live web search."
+}
