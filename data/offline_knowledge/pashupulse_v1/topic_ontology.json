@@ -1,0 +1,50 @@
+{
+  "version": "pashupulse_topic_ontology_v1",
+  "topics": {
+    "routine_observation": {
+      "aliases": ["normal", "thoda", "kam", "slow", "dull", "weak", "sust", "kha raha", "standing", "gobar normal"],
+      "default_risk": "green",
+      "retrieval_hint": "Prefer observation chunks unless red flags are explicit."
+    },
+    "water_heat": {
+      "aliases": ["paani", "water", "drinking", "garmi", "heat", "shade", "hot weather"],
+      "default_risk": "green"
+    },
+    "feed": {
+      "aliases": ["chara", "feed", "fodder", "dana", "mold", "fungus", "bad smell", "rain", "wet feed"],
+      "default_risk": "yellow"
+    },
+    "milk_udder": {
+      "aliases": ["doodh", "milk", "clot", "blood", "udder", "than", "sujan", "hot quarter", "bad smell"],
+      "default_risk": "yellow"
+    },
+    "bloat": {
+      "aliases": ["pet phool", "bloat", "left side", "tight belly", "gas", "tel", "oil", "drench", "puncture"],
+      "default_risk": "red"
+    },
+    "wound_skin": {
+      "aliases": ["ghav", "zakhm", "wound", "cut", "red mark", "sujan", "maggot", "makhi", "mirch", "raakh"],
+      "default_risk": "yellow"
+    },
+    "calf": {
+      "aliases": ["bachda", "bachdi", "calf", "loose motion", "dast", "dry feed", "doodh nahi pee raha"],
+      "default_risk": "yellow"
+    },
+    "calving": {
+      "aliases": ["bachda hone", "calving", "water bag", "kheench", "pull", "atka", "delivery"],
+      "default_risk": "red"
+    },
+    "bite_rabies": {
+      "aliases": ["dog", "bite", "saliva", "kutta", "kaata", "rabies", "children", "haath"],
+      "default_risk": "red"
+    },
+    "outbreak": {
+      "aliases": ["3 gai", "multiple animals", "muh chhale", "lar", "lameness", "market", "abortion cluster", "gaon"],
+      "default_risk": "red"
+    },
+    "medicine_pressure": {
+      "aliases": ["injection", "dose", "ml", "antibiotic", "tablet", "syrup", "dukaan", "doctor dur"],
+      "default_risk": "yellow"
+    }
+  }
+}
