@@ -1,0 +1,23 @@
+{
+  "id": "nehak76044/pashupulse-cpt-vs-offline-rag-inference",
+  "title": "PashuPulse CPT vs Offline RAG Inference",
+  "code_file": "cpt_vs_rag_inference.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "kernel_sources": [
+    "nehak76044/pashupulse-gemma-raw-cpt"
+  ],
+  "model_sources": [
+    "google/gemma-4/Transformers/gemma-4-e2b-it/1"
+  ],
+  "competition_sources": [],
+  "keywords": [
+    "gpu"
+  ]
+}
