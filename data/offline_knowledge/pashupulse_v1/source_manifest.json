@@ -3,86 +3,20 @@
   "created_at": "2026-05-18",
   "purpose": "Offline local knowledge store for PashuPulse retrieval and SFT seed creation.",
   "sources": [
-    {
-      "source_id": "dahd_lhdcp",
-      "publisher": "Department of Animal Husbandry and Dairying, Government of India",
-      "source_type": "government_official",
-      "url": "https://monitor.dahd.gov.in/livestock-health-disease",
-      "country_or_region": "India",
-      "topics": ["official_escalation", "disease_control", "veterinary_services"],
-      "allowed_use": ["rag", "sft_seed", "safety_policy"]
-    },
-    {
-      "source_id": "dahd_nadcp",
-      "publisher": "Department of Animal Husbandry and Dairying, Government of India",
-      "source_type": "government_official",
-      "url": "https://www.dahd.gov.in/schemes/programmes/nadcp",
-      "country_or_region": "India",
-      "topics": ["outbreak", "fmd", "brucellosis", "herd_health"],
-      "allowed_use": ["rag", "sft_seed", "safety_policy"]
-    },
-    {
-      "source_id": "nddb_clean_milk",
-      "publisher": "National Dairy Development Board",
-      "source_type": "official_dairy_institution",
-      "url": "https://www.nddb.coop/farmer/dairying/cmp",
-      "country_or_region": "India",
-      "topics": ["milk", "udder", "hygiene"],
-      "allowed_use": ["rag", "sft_seed"]
-    },
-    {
-      "source_id": "nddb_water",
-      "publisher": "National Dairy Development Board",
-      "source_type": "official_dairy_institution",
-      "url": "https://www.nddb.coop/farmer/animal-nutrition/importance-of-drinking-water-for-dairy-animals",
-      "country_or_region": "India",
-      "topics": ["water", "heat", "routine_observation"],
-      "allowed_use": ["rag", "sft_seed"]
-    },
-    {
-      "source_id": "nddb_feed_safety",
-      "publisher": "National Dairy Development Board",
-      "source_type": "official_dairy_institution",
-      "url": "https://www.nddb.coop/farmer/animal-health/disease/fungal/Aflatoxicosis",
-      "country_or_region": "India",
-      "topics": ["feed", "mold", "aflatoxin", "storage"],
-      "allowed_use": ["rag", "sft_seed"]
-    },
-    {
-      "source_id": "tnau_cattle_care",
-      "publisher": "Tamil Nadu Agricultural University",
-      "source_type": "university_extension",
-      "url": "http://agritech.tnau.ac.in/animal_husbandry/animhus_cattle_care%26management.html",
-      "country_or_region": "India",
-      "topics": ["cattle_care", "calf_care", "housing", "feeding", "routine_observation"],
-      "allowed_use": ["rag", "sft_seed"]
-    },
-    {
-      "source_id": "fao_first_aid",
-      "publisher": "Food and Agriculture Organization of the United Nations",
-      "source_type": "intergovernmental",
-      "url": "https://www.fao.org/4/t1265e/t1285e09.htm",
-      "country_or_region": "international",
-      "topics": ["first_aid", "safe_support", "escalation"],
-      "allowed_use": ["rag", "sft_seed", "safety_policy"]
-    },
-    {
-      "source_id": "who_rabies",
-      "publisher": "World Health Organization",
-      "source_type": "public_health_authority",
-      "url": "https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations",
-      "country_or_region": "international",
-      "topics": ["rabies", "bite", "saliva", "public_health"],
-      "allowed_use": ["rag", "safety_policy"]
-    },
-    {
-      "source_id": "msd_mastitis_concept",
-      "publisher": "MSD/Merck Veterinary Manual",
-      "source_type": "veterinary_reference_quarantined",
-      "url": "https://www.merckvetmanual.com/reproductive-system/mastitis-in-large-animals/mastitis-in-cattle",
-      "country_or_region": "international",
-      "topics": ["mastitis", "udder", "abnormal_milk"],
-      "allowed_use": ["rag_concept_only", "safety_policy"]
-    }
+    {"source_id":"dahd_lhdcp","publisher":"Department of Animal Husbandry and Dairying, Government of India","source_type":"government_official","url":"https://monitor.dahd.gov.in/livestock-health-disease","country_or_region":"India","topics":["official_escalation","disease_control","veterinary_services","respiratory"],"allowed_use":["rag","sft_seed","safety_policy"]},
+    {"source_id":"dahd_nadcp","publisher":"Department of Animal Husbandry and Dairying, Government of India","source_type":"government_official","url":"https://www.dahd.gov.in/schemes/programmes/nadcp","country_or_region":"India","topics":["outbreak","fmd","brucellosis","herd_health","abortion"],"allowed_use":["rag","sft_seed","safety_policy"]},
+    {"source_id":"nddb_clean_milk","publisher":"National Dairy Development Board","source_type":"official_dairy_institution","url":"https://www.nddb.coop/farmer/dairying/cmp","country_or_region":"India","topics":["milk","udder","hygiene"],"allowed_use":["rag","sft_seed"]},
+    {"source_id":"nddb_water","publisher":"National Dairy Development Board","source_type":"official_dairy_institution","url":"https://www.nddb.coop/farmer/animal-nutrition/importance-of-drinking-water-for-dairy-animals","country_or_region":"India","topics":["water","heat","routine_observation"],"allowed_use":["rag","sft_seed"]},
+    {"source_id":"nddb_feed_safety","publisher":"National Dairy Development Board","source_type":"official_dairy_institution","url":"https://www.nddb.coop/farmer/animal-health/disease/fungal/Aflatoxicosis","country_or_region":"India","topics":["feed","mold","aflatoxin","storage"],"allowed_use":["rag","sft_seed"]},
+    {"source_id":"tnau_cattle_care","publisher":"Tamil Nadu Agricultural University","source_type":"university_extension","url":"http://agritech.tnau.ac.in/animal_husbandry/animhus_cattle_care%26management.html","country_or_region":"India","topics":["cattle_care","calf_care","housing","feeding","routine_observation","calving"],"allowed_use":["rag","sft_seed"]},
+    {"source_id":"fao_first_aid","publisher":"Food and Agriculture Organization of the United Nations","source_type":"intergovernmental","url":"https://www.fao.org/4/t1265e/t1285e09.htm","country_or_region":"international","topics":["first_aid","safe_support","escalation","wound","fracture","choking"],"allowed_use":["rag","sft_seed","safety_policy"]},
+    {"source_id":"who_rabies","publisher":"World Health Organization","source_type":"public_health_authority","url":"https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations","country_or_region":"international","topics":["rabies","bite","saliva","public_health"],"allowed_use":["rag","safety_policy"]},
+    {"source_id":"msd_mastitis_concept","publisher":"MSD/Merck Veterinary Manual","source_type":"veterinary_reference_quarantined","url":"https://www.merckvetmanual.com/reproductive-system/mastitis-in-large-animals/mastitis-in-cattle","country_or_region":"international","topics":["mastitis","udder","abnormal_milk"],"allowed_use":["rag_concept_only","safety_policy"]},
+    {"source_id":"merck_snakebite","publisher":"Merck Veterinary Manual","source_type":"veterinary_reference_quarantined","url":"https://www.merckvetmanual.com/special-pet-topics/poisoning/snakebite","country_or_region":"international","topics":["snakebite","emergency","myth_blocking"],"allowed_use":["rag_concept_only","safety_policy"]},
+    {"source_id":"merck_organophosphate","publisher":"Merck Veterinary Manual","source_type":"veterinary_reference_quarantined","url":"https://www.merckvetmanual.com/toxicology/insecticide-and-acaricide-organic-toxicity/organophosphate-toxicosis-in-animals","country_or_region":"international","topics":["poisoning","pesticide","neurological","emergency"],"allowed_use":["rag_concept_only","safety_policy"]},
+    {"source_id":"woah_anthrax","publisher":"World Organisation for Animal Health","source_type":"intergovernmental_animal_health","url":"https://www.woah.org/en/disease/anthrax/","country_or_region":"international","topics":["anthrax","sudden_death","carcass","public_health"],"allowed_use":["rag","safety_policy"]},
+    {"source_id":"woah_ppr","publisher":"World Organisation for Animal Health","source_type":"intergovernmental_animal_health","url":"https://www.woah.org/en/disease/peste-des-petits-ruminants/","country_or_region":"international","topics":["goat_sheep","ppr","outbreak","mouth_signs"],"allowed_use":["rag","safety_policy"]},
+    {"source_id":"woah_avian_influenza","publisher":"World Organisation for Animal Health","source_type":"intergovernmental_animal_health","url":"https://www.woah.org/en/disease/avian-influenza/","country_or_region":"international","topics":["poultry","avian_influenza","outbreak","public_health"],"allowed_use":["rag","safety_policy"]},
+    {"source_id":"umn_heat_stress","publisher":"University of Minnesota Extension","source_type":"university_extension","url":"https://extension.umn.edu/dairy-milking-cows/heat-stress-dairy-cattle","country_or_region":"international","topics":["heat_stress","water","emergency"],"allowed_use":["rag","sft_seed"]}
   ]
 }
