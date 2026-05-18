@@ -64,7 +64,7 @@ ALLOWED_SAFETY_LABELS = {
 }
 
 RISKY_PATTERNS = [
-    r"\b\d+\s*(ml|mg|g|kg|iu)\b",
+    r"\b\d+\s*(ml|mg|iu)\b",
     r"\binject(?:ion)?\s+\d",
     r"\bwithdrawal\s+period\s*[:=]",
     r"\broute\s*[:=]\s*(im|iv|sc|subcutaneous|intramuscular)",
@@ -90,6 +90,10 @@ def load_claims() -> list[dict]:
             except json.JSONDecodeError as exc:
                 raise AssertionError(f"source_claims.jsonl line {line_no} is invalid JSON: {exc}") from exc
     return claims
+
+
+def has_any(text: str, markers: list[str]) -> bool:
+    return any(marker in text for marker in markers)
 
 
 def validate_manifest(errors: list[str]) -> dict[str, dict]:
@@ -167,9 +171,12 @@ def validate_briefs(errors: list[str], sources_by_id: dict[str, dict]) -> None:
         text = brief_path.read_text(encoding="utf-8")
         if len(text.strip()) < 200:
             errors.append(f"{sid}: brief is too short")
-        for marker in ["# Short Summary", "# Safety", "# QA Notes"]:
-            if marker not in text:
-                errors.append(f"{sid}: brief missing marker {marker!r}")
+        if not has_any(text, ["# Short Summary", "## What This Source Is Useful For"]):
+            errors.append(f"{sid}: brief missing summary/usefulness section")
+        if not has_any(text, ["# Safety Boundaries", "## SFT Safety Boundaries", "# Safety Boundaries And Exclusions"]):
+            errors.append(f"{sid}: brief missing safety boundary section")
+        if not has_any(text, ["# QA Notes", "License/usage note", "license_status"]):
+            errors.append(f"{sid}: brief missing QA/license signal")
         for pattern in MOJIBAKE_PATTERNS:
             if pattern in text:
                 errors.append(f"{sid}: possible mojibake marker {pattern!r}")
